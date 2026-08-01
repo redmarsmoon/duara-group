@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Duara Group | Building Africa Through Technology &amp; Innovation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "error-container": "#ffdad6",
+                      "surface": "#f9f9fc",
+                      "on-primary": "#ffffff",
+                      "secondary": "#466800",
+                      "surface-bright": "#f9f9fc",
+                      "on-surface-variant": "#414843",
+                      "tertiary-fixed": "#e1e3e4",
+                      "error": "#ba1a1a",
+                      "background": "#f9f9fc",
+                      "secondary-fixed-dim": "#a5d654",
+                      "on-secondary-fixed-variant": "#344e00",
+                      "secondary-fixed": "#c0f36d",
+                      "surface-variant": "#e2e2e5",
+                      "tertiary-container": "#2a2d2e",
+                      "surface-container-high": "#e8e8ea",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary-fixed-dim": "#c5c7c8",
+                      "primary-fixed-dim": "#a6d0b6",
+                      "surface-tint": "#406651",
+                      "surface-container-highest": "#e2e2e5",
+                      "on-tertiary-fixed": "#191c1d",
+                      "surface-dim": "#dadadc",
+                      "inverse-surface": "#2f3133",
+                      "on-primary-fixed": "#002112",
+                      "on-error": "#ffffff",
+                      "surface-container-low": "#f3f3f6",
+                      "on-secondary": "#ffffff",
+                      "surface-container": "#eeeef0",
+                      "on-primary-fixed-variant": "#284e3a",
+                      "on-tertiary-fixed-variant": "#454748",
+                      "primary": "#001d0f",
+                      "on-primary-container": "#749d85",
+                      "on-background": "#1a1c1e",
+                      "primary-fixed": "#c1edd1",
+                      "on-tertiary-container": "#929495",
+                      "primary-container": "#0a3321",
+                      "inverse-primary": "#a6d0b6",
+                      "tertiary": "#161819",
+                      "inverse-on-surface": "#f0f0f3",
+                      "on-tertiary": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "outline-variant": "#c1c8c1",
+                      "on-surface": "#1a1c1e",
+                      "on-secondary-container": "#4b6f00",
+                      "secondary-container": "#c0f36d",
+                      "on-secondary-fixed": "#121f00",
+                      "outline": "#717973"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "stack-md": "24px",
+                      "section-padding": "120px",
+                      "gutter": "32px",
+                      "container-max": "1280px",
+                      "stack-sm": "8px",
+                      "margin-mobile": "20px",
+                      "stack-lg": "80px",
+                      "margin-desktop": "64px"
+              },
+              "fontFamily": {
+                      "headline-lg-mobile": [
+                              "Montserrat"
+                      ],
+                      "headline-md": [
+                              "Montserrat"
+                      ],
+                      "caption": [
+                              "Inter"
+                      ],
+                      "label-bold": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Montserrat"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-xl": [
+                              "Montserrat"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "caption": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "label-bold": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-xl": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .glass-header {
+            backdrop-filter: blur(12px);
+        }
+        .card-shadow {
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
+        }
+        .card-shadow:hover {
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Hero Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes subtleFloat {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-12px);
+            }
+        }
+
+        .animate-fade-in-up {
+            opacity: 0;
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        .animate-fade-in-up.delay-200 {
+            animation-delay: 200ms;
+        }
+
+        .animate-fade-in-up.delay-400 {
+            animation-delay: 400ms;
+        }
+
+        .animate-float {
+            animation: subtleFloat 6s ease-in-out infinite;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .animate-fade-in-up,
+            .animate-float {
+                animation: none !important;
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        }
+      </style>
+<meta content="Duara Group is a premier East African holding company driving sustainable growth and technological advancement across the continent. Discover our companies." name="description"/></head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
+<!-- TopNavBar from JSON -->
+<nav class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl border-b border-outline-variant/30 shadow-sm transition-all duration-300 ease-in-out glass-header">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto h-20">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">
+                Duara Group
+            </div>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="text-secondary font-bold border-b-2 border-secondary pb-1 font-body-md text-body-md lg:font-label-bold lg:text-label-bold hover:text-secondary-container transition-all duration-300" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md lg:font-label-bold lg:text-label-bold hover:text-secondary-container transition-all duration-300" href="#">About</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md lg:font-label-bold lg:text-label-bold hover:text-secondary-container transition-all duration-300" href="#">Companies</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md lg:font-label-bold lg:text-label-bold hover:text-secondary-container transition-all duration-300" href="#">East Africa</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md lg:font-label-bold lg:text-label-bold hover:text-secondary-container transition-all duration-300" href="#">CSR</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md lg:font-label-bold lg:text-label-bold hover:text-secondary-container transition-all duration-300" href="#">News</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md lg:font-label-bold lg:text-label-bold hover:text-secondary-container transition-all duration-300" href="#">Careers</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md lg:font-label-bold lg:text-label-bold hover:text-secondary-container transition-all duration-300" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-3 rounded-lg font-label-bold text-label-bold hover:bg-primary-container transition-colors hidden md:block">
+                Partner With Us
+            </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="pt-32 pb-section-padding px-margin-mobile md:px-margin-desktop relative overflow-hidden bg-surface-container-low">
+<div class="absolute inset-0 z-0 opacity-20" data-alt="A sprawling, futuristic African metropolis at dawn, viewed from a high altitude. The city features sleek, modern architecture blended with lush greenery. High-tech infrastructure and data streams are visually represented as glowing lines woven through the cityscape. The lighting is soft, optimistic morning sunlight creating a bright, high-key corporate aesthetic with deep greens and clean whites." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuABqoAGMZprrsiaBwNGfG25nRtxqSQIFGx40_YpK7Yu2gV2dD5ZR9lRStiyEv93iKT16fQflXi_tXjyaItVKWRUmoUH8zrRoxRWjgBdyvAatp4p4wXQn68BnyE8nxNH-nufKbforvt1lJogSjKfM5Tss3ceNJ7KdSUxfheUtumGJVFuVU1x2uqvuGGgXquGMFRMvCHmM8eBHIr1eAc4_NhBbxb6S6SgRtelFBdYUo7TlMsDEbZZiFRrww')"></div>
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter relative z-10 items-center">
+<div class="col-span-1 md:col-span-8 flex flex-col gap-stack-md">
+<h1 class="animate-fade-in-up font-headline-lg-mobile text-headline-lg-mobile md:font-headline-xl md:text-headline-xl text-primary">
+                    Building Africa Through Technology, Innovation &amp; Enterprise
+                </h1>
+<p class="animate-fade-in-up delay-200 font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    Duara Group is a premier East African holding company driving sustainable growth and technological advancement across the continent. We invest in the future of Africa through robust infrastructure, digital solutions, and strategic partnerships.
+                </p>
+<div class="animate-fade-in-up delay-400 flex flex-wrap gap-stack-sm pt-stack-sm">
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-label-bold text-label-bold hover:bg-secondary-container hover:text-on-secondary-container transition-colors">
+                        Explore Our Companies
+                    </button>
+<button class="bg-transparent border border-secondary text-secondary px-8 py-4 rounded-lg font-label-bold text-label-bold hover:bg-surface-variant transition-colors">
+                        Partner With Us
+                    </button>
+</div>
+</div>
+<div class="hidden md:block col-span-4 relative h-[400px]">
+<img class="animate-float w-full h-full object-contain drop-shadow-2xl" data-alt="A stylized, modern 3D illustration of the African continent composed of interconnected digital nodes and glowing fiber optic cables. The primary colors are sophisticated deep greens and crisp whites, reflecting a corporate technology brand. The continent appears to be floating in a bright, clean, minimalist space with soft ambient lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2Bcm_TL5xJKYgv06F3kJgOLn4uROvY1QTmx5EsAcu2RDzICV6ua4YiCIkreukhIWgZqyBHmQJHzUA5CjGTIxMVVShdce3eCjtvI3taTKjN494DSY5QGvD0XnDOFuCMvsA3kLovQVRymJDDAT9cehw_s_5d2bTRVcRZ39xIAHCcJcAjVq4aFXMn-VZDoEfGzJUoFR7edCrYzt4XrdoIOzHeZc1xKF3hKSpeF094dI4rYvFfDkIsEyUWg"/>
+</div>
+</div>
+</section>
+<!-- Footer from JSON -->
+<!-- About Duara Group --><section class="py-section-padding px-margin-mobile md:px-margin-desktop bg-surface reveal-hidden">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-primary mb-stack-md">About Duara Group</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-md">
+                Duara Group is an East African company investing in technology, business development, consulting, audiovisual solutions, and education.
+            </p>
+<a class="inline-flex items-center gap-2 text-secondary font-label-bold text-label-bold hover:text-secondary-container transition-colors" href="about.html">
+                Learn More <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="rounded-xl overflow-hidden shadow-lg h-64 md:h-96">
+<img alt="About Duara Group" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2Bcm_TL5xJKYgv06F3kJgOLn4uROvY1QTmx5EsAcu2RDzICV6ua4YiCIkreukhIWgZqyBHmQJHzUA5CjGTIxMVVShdce3eCjtvI3taTKjN494DSY5QGvD0XnDOFuCMvsA3kLovQVRymJDDAT9cehw_s_5d2bTRVcRZ39xIAHCcJcAjVq4aFXMn-VZDoEfGzJUoFR7edCrYzt4XrdoIOzHeZc1xKF3hKSpeF094dI4rYvFfDkIsEyUWg"/>
+</div>
+</div>
+</section><!-- Our Companies --><section class="py-section-padding px-margin-mobile md:px-margin-desktop bg-surface-container-low reveal-hidden">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-stack-lg">
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-primary mb-stack-sm">Our Companies</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Driving innovation and enterprise across East Africa through specialized subsidiaries.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Duara Tech -->
+<div class="bg-surface-container-lowest rounded-xl p-stack-md shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-primary-container rounded-lg mb-stack-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary">memory</span>
+</div>
+<h3 class="font-headline-md text-xl font-bold text-primary mb-2">Duara Tech</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Technology and digital innovation company.</p>
+<ul class="text-on-surface-variant text-sm mb-4 space-y-1">
+<li>• Software Development</li>
+<li>• AI Solutions</li>
+<li>• Cloud Infrastructure</li>
+</ul>
+<a class="text-secondary font-label-bold text-sm hover:underline" href="companies.html">Visit Duara Tech →</a>
+</div>
+<!-- Duara Agency -->
+<div class="bg-surface-container-lowest rounded-xl p-stack-md shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-surface-variant rounded-lg mb-stack-sm flex items-center justify-center border border-outline-variant/50">
+<span class="material-symbols-outlined text-primary">campaign</span>
+</div>
+<h3 class="font-headline-md text-xl font-bold text-primary mb-2">Duara Agency</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Business growth and Africa market expansion company.</p>
+<ul class="text-on-surface-variant text-sm mb-4 space-y-1">
+<li>• Africa Market Entry</li>
+<li>• Trade Consultation</li>
+<li>• Investment Support</li>
+</ul>
+<a class="text-secondary font-label-bold text-sm hover:underline" href="companies.html">Visit Duara Agency →</a>
+</div>
+<!-- Duara Audiovisual -->
+<div class="bg-surface-container-lowest rounded-xl p-stack-md shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-tertiary-container rounded-lg mb-stack-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-on-tertiary-container">movie</span>
+</div>
+<h3 class="font-headline-md text-xl font-bold text-primary mb-2">Duara Audiovisual</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Professional audiovisual and event technology company.</p>
+<ul class="text-on-surface-variant text-sm mb-4 space-y-1">
+<li>• Professional Sound Systems</li>
+<li>• Event Production</li>
+<li>• LED Screens</li>
+</ul>
+<a class="text-secondary font-label-bold text-sm hover:underline" href="companies.html">Visit Duara Audiovisual →</a>
+</div>
+</div>
+</div>
+</section><!-- Our Presence --><section class="py-section-padding px-margin-mobile md:px-margin-desktop bg-primary text-on-primary reveal-hidden">
+<div class="max-w-container-max mx-auto text-center">
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-primary mb-stack-md">Our Presence</h2>
+<p class="font-body-lg text-body-lg text-on-primary/80 max-w-2xl mx-auto mb-stack-lg">
+            Headquartered in Nairobi, Kenya, serving businesses across East Africa.
+        </p>
+<div class="flex flex-wrap justify-center gap-4 text-on-primary/90 font-label-bold text-lg">
+<span class="bg-primary-container px-4 py-2 rounded-full border border-outline-variant/20">Kenya</span>
+<span class="bg-primary-container px-4 py-2 rounded-full border border-outline-variant/20">Uganda</span>
+<span class="bg-primary-container px-4 py-2 rounded-full border border-outline-variant/20">Tanzania</span>
+<span class="bg-primary-container px-4 py-2 rounded-full border border-outline-variant/20">Rwanda</span>
+<span class="bg-primary-container px-4 py-2 rounded-full border border-outline-variant/20">Burundi</span>
+<span class="bg-primary-container px-4 py-2 rounded-full border border-outline-variant/20">South Sudan</span>
+<span class="bg-primary-container px-4 py-2 rounded-full border border-outline-variant/20">Ethiopia</span>
+<span class="bg-primary-container px-4 py-2 rounded-full border border-outline-variant/20">Somalia</span>
+<span class="bg-primary-container px-4 py-2 rounded-full border border-outline-variant/20">Djibouti</span>
+</div>
+</div>
+</section><!-- Industries We Support --><section class="py-section-padding px-margin-mobile md:px-margin-desktop bg-surface reveal-hidden">
+<div class="max-w-container-max mx-auto text-center">
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-primary mb-stack-lg">Industries We Support</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 text-on-surface-variant font-label-bold">
+<div class="p-4 bg-surface-container-low rounded-lg shadow-sm">Technology</div>
+<div class="p-4 bg-surface-container-low rounded-lg shadow-sm">Finance</div>
+<div class="p-4 bg-surface-container-low rounded-lg shadow-sm">Education</div>
+<div class="p-4 bg-surface-container-low rounded-lg shadow-sm">Agriculture</div>
+<div class="p-4 bg-surface-container-low rounded-lg shadow-sm">Healthcare</div>
+<div class="p-4 bg-surface-container-low rounded-lg shadow-sm">Manufacturing</div>
+<div class="p-4 bg-surface-container-low rounded-lg shadow-sm">Retail</div>
+<div class="p-4 bg-surface-container-low rounded-lg shadow-sm">E-commerce</div>
+<div class="p-4 bg-surface-container-low rounded-lg shadow-sm">Hospitality</div>
+<div class="p-4 bg-surface-container-low rounded-lg shadow-sm">Logistics</div>
+<div class="p-4 bg-surface-container-low rounded-lg shadow-sm">Energy</div>
+<div class="p-4 bg-surface-container-low rounded-lg shadow-sm">Startups</div>
+</div>
+</div>
+</section><!-- Corporate Social Responsibility --><section class="py-section-padding px-margin-mobile md:px-margin-desktop bg-surface-container-low reveal-hidden">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="order-2 md:order-1 rounded-xl overflow-hidden shadow-lg h-64 md:h-96">
+<img alt="Technology for Education" class="w-full h-full object-cover" onerror="this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuB2Bcm_TL5xJKYgv06F3kJgOLn4uROvY1QTmx5EsAcu2RDzICV6ua4YiCIkreukhIWgZqyBHmQJHzUA5CjGTIxMVVShdce3eCjtvI3taTKjN494DSY5QGvD0XnDOFuCMvsA3kLovQVRymJDDAT9cehw_s_5d2bTRVcRZ39xIAHCcJcAjVq4aFXMn-VZDoEfGzJUoFR7edCrYzt4XrdoIOzHeZc1xKF3hKSpeF094dI4rYvFfDkIsEyUWg'" src="assets/images/csr.png"/>
+</div>
+<div class="order-1 md:order-2">
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-primary mb-stack-md">Corporate Social Responsibility</h2>
+<h3 class="font-headline-md text-xl font-bold text-secondary mb-2">Technology for Education</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-md">
+                Our CSR initiative focuses on making education more accessible across Africa through free digital learning resources and technology education.
+            </p>
+<ul class="text-on-surface-variant text-md mb-stack-md space-y-2 font-body-md">
+<li>✓ Free online learning resources</li>
+<li>✓ Digital skills training</li>
+<li>✓ AI learning resources</li>
+</ul>
+<a class="inline-flex items-center gap-2 bg-secondary text-white px-6 py-3 rounded-lg font-label-bold text-label-bold hover:bg-secondary-container hover:text-on-secondary-container transition-colors" href="csr.html">
+                Learn More
+            </a>
+</div>
+</div>
+</section><!-- Call to Action --><section class="py-section-padding px-margin-mobile md:px-margin-desktop bg-surface text-center reveal-hidden">
+<div class="max-w-2xl mx-auto">
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-primary mb-stack-md">Interested in partnering with Duara Group?</h2>
+<a class="inline-block bg-primary text-on-primary px-8 py-4 rounded-lg font-label-bold text-label-bold hover:bg-primary-container transition-colors shadow-lg" href="contact.html">
+            Partner With Us
+        </a>
+</div>
+</section><footer class="bg-primary dark:bg-tertiary-container text-on-primary dark:text-on-tertiary-container w-full py-stack-lg border-t-0 shadow-none">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col gap-stack-md">
+<div class="font-headline-md text-headline-md text-on-primary">
+                    Duara Group
+                </div>
+<p class="font-body-md text-body-md text-on-primary/80">
+                    Driving innovation and enterprise across East Africa.
+                </p>
+<p class="font-caption text-caption text-on-primary/60 mt-auto">
+                    © 2024 Duara Group. All Rights Reserved.
+                </p>
+</div>
+<div class="flex flex-col gap-stack-sm">
+<h4 class="font-label-bold text-label-bold text-secondary-fixed mb-stack-sm">Company</h4>
+<a class="font-body-md text-body-md text-on-primary/80 dark:text-on-tertiary-container/80 hover:text-white hover:translate-x-1 transition-transform duration-200 opacity-90 hover:opacity-100" href="#">Company Overview</a>
+<a class="font-body-md text-body-md text-on-primary/80 dark:text-on-tertiary-container/80 hover:text-white hover:translate-x-1 transition-transform duration-200 opacity-90 hover:opacity-100" href="#">Regional Presence</a>
+<a class="font-body-md text-body-md text-on-primary/80 dark:text-on-tertiary-container/80 hover:text-white hover:translate-x-1 transition-transform duration-200 opacity-90 hover:opacity-100" href="#">Careers</a>
+</div>
+<div class="flex flex-col gap-stack-sm">
+<h4 class="font-label-bold text-label-bold text-secondary-fixed mb-stack-sm">Our Network</h4>
+<a class="font-body-md text-body-md text-on-primary/80 dark:text-on-tertiary-container/80 hover:text-white hover:translate-x-1 transition-transform duration-200 opacity-90 hover:opacity-100" href="#">Subsidiary Links</a>
+<a class="font-body-md text-body-md text-on-primary/80 dark:text-on-tertiary-container/80 hover:text-white hover:translate-x-1 transition-transform duration-200 opacity-90 hover:opacity-100" href="#">CSR</a>
+</div>
+<div class="flex flex-col gap-stack-sm">
+<h4 class="font-label-bold text-label-bold text-secondary-fixed mb-stack-sm">Legal</h4>
+<a class="font-body-md text-body-md text-on-primary/80 dark:text-on-tertiary-container/80 hover:text-white hover:translate-x-1 transition-transform duration-200 opacity-90 hover:opacity-100" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+</body></html>

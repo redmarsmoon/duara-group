@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Media &amp; News | Duara Group</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#ffdad6",
+                        "surface": "#f9f9fc",
+                        "on-primary": "#ffffff",
+                        "secondary": "#466800",
+                        "surface-bright": "#f9f9fc",
+                        "on-surface-variant": "#414843",
+                        "tertiary-fixed": "#e1e3e4",
+                        "error": "#ba1a1a",
+                        "background": "#f9f9fc",
+                        "secondary-fixed-dim": "#a5d654",
+                        "on-secondary-fixed-variant": "#344e00",
+                        "secondary-fixed": "#c0f36d",
+                        "surface-variant": "#e2e2e5",
+                        "tertiary-container": "#2a2d2e",
+                        "surface-container-high": "#e8e8ea",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#c5c7c8",
+                        "primary-fixed-dim": "#a6d0b6",
+                        "surface-tint": "#406651",
+                        "surface-container-highest": "#e2e2e5",
+                        "on-tertiary-fixed": "#191c1d",
+                        "surface-dim": "#dadadc",
+                        "inverse-surface": "#2f3133",
+                        "on-primary-fixed": "#002112",
+                        "on-error": "#ffffff",
+                        "surface-container-low": "#f3f3f6",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#eeeef0",
+                        "on-primary-fixed-variant": "#284e3a",
+                        "on-tertiary-fixed-variant": "#454748",
+                        "primary": "#001d0f",
+                        "on-primary-container": "#749d85",
+                        "on-background": "#1a1c1e",
+                        "primary-fixed": "#c1edd1",
+                        "on-tertiary-container": "#929495",
+                        "primary-container": "#0a3321",
+                        "inverse-primary": "#a6d0b6",
+                        "tertiary": "#161819",
+                        "inverse-on-surface": "#f0f0f3",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "outline-variant": "#c1c8c1",
+                        "on-surface": "#1a1c1e",
+                        "on-secondary-container": "#4b6f00",
+                        "secondary-container": "#c0f36d",
+                        "on-secondary-fixed": "#121f00",
+                        "outline": "#717973"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-md": "24px",
+                        "section-padding": "120px",
+                        "gutter": "32px",
+                        "container-max": "1280px",
+                        "stack-sm": "8px",
+                        "margin-mobile": "20px",
+                        "stack-lg": "80px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "caption": ["Inter"],
+                        "label-bold": ["Inter"],
+                        "headline-lg": ["Montserrat"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-xl": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "caption": ["12px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "label-bold": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-xl": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        /* Scroll Reveal Utility Classes */
+        @media (prefers-reduced-motion: no-preference) {
+            .reveal-fade-up {
+                opacity: 0;
+                transform: translateY(30px);
+                transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1), transform 0.8s cubic-bezier(0.5, 0, 0, 1);
+            }
+            
+            .reveal-fade-up.is-revealed {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            
+            /* Stagger classes for grid items */
+            .delay-100 { transition-delay: 100ms; }
+            .delay-200 { transition-delay: 200ms; }
+            .delay-300 { transition-delay: 300ms; }
+        }
+    </style>
+<meta content="Stay updated with the latest news, press releases, events, and company updates from Duara Group and its subsidiaries." name="description"/></head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden pt-20">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl border-b border-outline-variant/30 shadow-sm transition-all duration-300 ease-in-out" id="main-nav">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto h-20">
+<!-- Brand -->
+<a class="font-headline-md text-headline-md font-bold text-primary flex items-center gap-2 group" href="#">
+                Duara Group
+            </a>
+<!-- Desktop Nav Links -->
+<div class="hidden lg:flex items-center space-x-8">
+<a class="text-on-surface-variant font-body-md text-body-md lg:font-label-bold lg:text-label-bold hover:text-secondary hover:text-secondary-container transition-all duration-300" href="#">Home</a>
+<a class="text-on-surface-variant font-body-md text-body-md lg:font-label-bold lg:text-label-bold hover:text-secondary hover:text-secondary-container transition-all duration-300" href="#">About</a>
+<a class="text-on-surface-variant font-body-md text-body-md lg:font-label-bold lg:text-label-bold hover:text-secondary hover:text-secondary-container transition-all duration-300" href="#">Companies</a>
+<a class="text-on-surface-variant font-body-md text-body-md lg:font-label-bold lg:text-label-bold hover:text-secondary hover:text-secondary-container transition-all duration-300" href="#">East Africa</a>
+<a class="text-on-surface-variant font-body-md text-body-md lg:font-label-bold lg:text-label-bold hover:text-secondary hover:text-secondary-container transition-all duration-300" href="#">CSR</a>
+<a class="text-secondary font-bold border-b-2 border-secondary pb-1 font-body-md text-body-md lg:font-label-bold lg:text-label-bold hover:text-secondary-container transition-all duration-300" href="#">News</a>
+<a class="text-on-surface-variant font-body-md text-body-md lg:font-label-bold lg:text-label-bold hover:text-secondary hover:text-secondary-container transition-all duration-300" href="#">Careers</a>
+<a class="text-on-surface-variant font-body-md text-body-md lg:font-label-bold lg:text-label-bold hover:text-secondary hover:text-secondary-container transition-all duration-300" href="#">Contact</a>
+</div>
+<!-- Primary Action -->
+<div class="hidden lg:block">
+<a class="bg-primary text-on-primary font-label-bold text-label-bold py-3 px-6 rounded hover:bg-secondary transition-colors duration-300" href="#">
+                    Partner With Us
+                </a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="lg:hidden text-primary focus:outline-none">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<!-- Page Header & Featured News -->
+<header class="w-full pt-stack-lg pb-section-padding px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-section-padding reveal-fade-up">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-xl md:text-headline-xl text-primary mb-stack-md">Latest Announcements</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Stay informed with the latest developments, strategic partnerships, and regional growth initiatives from across the Duara Group portfolio.</p>
+</div>
+<!-- Featured Article (Bento Grid Style) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter group cursor-pointer relative rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-500 bg-surface reveal-fade-up">
+<div class="lg:col-span-8 h-96 lg:h-auto overflow-hidden">
+<img alt="Featured News Image" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A striking high-quality editorial photograph of a modern, sustainable infrastructure project in East Africa. The image features a newly constructed solar farm extending towards a vibrant horizon at golden hour. The lighting is optimistic and warm, highlighting the sleek, modern solar panels against the natural landscape. The style reflects a sophisticated corporate aesthetic, emphasizing growth, technology, and clean energy within a bright, modern context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcgdWjkiwnQEb4I2l7Wk4gW5_sK5K4-ai_fG9gkrxzHw09u0rl4EDSdX8NA-4xL_9apFo2-1BcAobGsnFL6DlD4g8AohXbsm4UJUeixyakRRlRdMdqER7RMndX0GiwFWrRSiS_uSSN08qlyfulK7vkpJUHWNa_C9TqPT50i87cdwQ-2Obvl8DfKLq4T-SMDfXQDdxv5fdrOFIgophkCKXXMAsva1DyelD-yhxS1uWtyqgJpyekPREMQQ"/>
+</div>
+<div class="lg:col-span-4 p-stack-lg flex flex-col justify-center bg-surface-container-lowest relative z-10">
+<div class="flex items-center gap-2 mb-stack-sm">
+<span class="bg-secondary-container text-on-secondary-container font-caption text-caption px-3 py-1 rounded-full uppercase tracking-wider">Expansion</span>
+<span class="text-on-surface-variant font-caption text-caption">Oct 24, 2024</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mb-stack-md group-hover:text-secondary transition-colors duration-300">Duara Group Announces $50M Sustainable Tech Hub in Nairobi</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md line-clamp-3">In a major move to bolster East Africa's digital infrastructure, Duara Group has broken ground on a state-of-the-art technology campus designed to foster local innovation and attract global partnerships.</p>
+<div class="mt-auto flex items-center text-secondary font-label-bold text-label-bold group-hover:translate-x-2 transition-transform duration-300">
+                        Read Full Story <span class="material-symbols-outlined ml-2 text-xl">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- News Grid with Filters -->
+<section class="py-section-padding px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+<div class="max-w-container-max mx-auto">
+<!-- Filters -->
+<div class="flex flex-wrap items-center gap-4 mb-stack-lg border-b border-outline-variant/30 pb-4 reveal-fade-up">
+<button class="font-label-bold text-label-bold px-4 py-2 text-secondary border-b-2 border-secondary hover:text-secondary transition-colors">All News</button>
+<button class="font-label-bold text-label-bold px-4 py-2 text-on-surface-variant hover:text-secondary transition-colors">Company News</button>
+<button class="font-label-bold text-label-bold px-4 py-2 text-on-surface-variant hover:text-secondary transition-colors">Partnerships</button>
+<button class="font-label-bold text-label-bold px-4 py-2 text-on-surface-variant hover:text-secondary transition-colors">Expansion</button>
+<button class="font-label-bold text-label-bold px-4 py-2 text-on-surface-variant hover:text-secondary transition-colors">CSR</button>
+<button class="font-label-bold text-label-bold px-4 py-2 text-on-surface-variant hover:text-secondary transition-colors">Tech</button>
+</div>
+<!-- Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Article Card 1 -->
+<article class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition-all duration-300 group cursor-pointer flex flex-col reveal-fade-up delay-100">
+<div class="h-56 overflow-hidden relative">
+<img alt="Article Image" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A professional corporate photograph showing two executives shaking hands in a modern, well-lit boardroom with large glass windows overlooking a bustling African metropolis. The lighting is bright and clean, emphasizing trust, partnership, and corporate governance. The color palette features neutral tones with subtle highlights, aligning with a premium, minimalist business aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjxx8ZXdSGjLKHlPr7AIAxa7aHbWdhH9AvfAklTCYomW9SJ6fyD-Atx6y2JXgbtpuHVA39ubv51KHnvhWamo5ySNVLL_RvMJFVpskpi4IaIssENZgOMnTy76tsLRT6DTqVccdWo4YIQtH5vG8XMXkkVucGPXulEJ7_OPerOcOCqJcXVLDEoZoHTtgvFJZ4GqkLvFIpDN7lyDVxzgzbAvYDp6EXWr0-3xAgG-huQ9L3S8ec2cY4gJoxcQ"/>
+<div class="absolute top-4 left-4 bg-surface/90 backdrop-blur-sm text-primary font-caption text-caption px-3 py-1 rounded-full">Partnerships</div>
+</div>
+<div class="p-stack-md flex flex-col flex-grow">
+<span class="text-outline font-caption text-caption mb-2">Oct 18, 2024</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-stack-sm text-[24px] leading-tight group-hover:text-secondary transition-colors">Strategic Alliance Formed with Global Logistics Leader</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-stack-md">A new joint venture aims to streamline supply chain operations across the region, reducing transit times and improving overall efficiency for our subsidiaries.</p>
+<div class="mt-auto flex items-center text-secondary font-label-bold text-label-bold opacity-0 group-hover:opacity-100 transform -translate-x-4 group-hover:translate-x-0 transition-all duration-300">
+                            Read Article <span class="material-symbols-outlined ml-1 text-sm">east</span>
+</div>
+</div>
+</article>
+<!-- Article Card 2 -->
+<article class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition-all duration-300 group cursor-pointer flex flex-col reveal-fade-up delay-200">
+<div class="h-56 overflow-hidden relative">
+<img alt="Article Image" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A heartwarming, high-quality editorial photo of a community education initiative in rural East Africa. Children are smiling in a newly built, modern classroom with large windows letting in abundant natural light. The aesthetic is clean, uplifting, and optimistic, focusing on human connection and corporate social responsibility within a bright, modern context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDrXSr2IiYTvaqFZI6gXRyAHzl0LDdymFFLEDWWjuvFYs91XF0YfX-qISqiCPILTKH7lmxMu6k1lERcEVpJTeJXYf9lZWuXbhyTghjH3Bey88rvfql7KkRM5TiO1vFk2um7lP8UhUrz1GKMBu1or5XWcPC5Jw3JAl3w-ZR8vI5qBJI2GpgRgUC0BA_rt-IxqUBmrY1-tatRcSfENH67Xge_iMLY8d0_zHPv7ahMUfYz-gbix5ZmlA1Bw"/>
+<div class="absolute top-4 left-4 bg-surface/90 backdrop-blur-sm text-primary font-caption text-caption px-3 py-1 rounded-full">CSR</div>
+</div>
+<div class="p-stack-md flex flex-col flex-grow">
+<span class="text-outline font-caption text-caption mb-2">Oct 12, 2024</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-stack-sm text-[24px] leading-tight group-hover:text-secondary transition-colors">Duara Foundation Launches Regional Education Initiative</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-stack-md">Committing resources to build and equip 50 new digital classrooms over the next two years to support STEM education in underserved communities.</p>
+<div class="mt-auto flex items-center text-secondary font-label-bold text-label-bold opacity-0 group-hover:opacity-100 transform -translate-x-4 group-hover:translate-x-0 transition-all duration-300">
+                            Read Article <span class="material-symbols-outlined ml-1 text-sm">east</span>
+</div>
+</div>
+</article>
+<!-- Article Card 3 -->
+<article class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition-all duration-300 group cursor-pointer flex flex-col reveal-fade-up delay-300">
+<div class="h-56 overflow-hidden relative">
+<img alt="Article Image" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A sleek, modern photograph of an advanced agricultural facility utilizing hydroponics technology. Rows of vibrant green plants are illuminated by specialized, high-tech lighting in a clean, pristine environment. The image communicates innovation, precision, and technological advancement within a minimalist, sophisticated corporate visual style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDchJQJZgpaa4nIF85-_WeW-_cJN2hQ8rOls5qVhp3KPFDtPqr_nl2m7HspYVuER2H5VLsKTzQCQOBJqpmSp1I069Z5mZw8ETymIdUts5j28fYyrwHxIlREFxpOFuhdiVJp1m8IkVSFUFwfffxzJURfx5RInYF_ByG6aGqMvInYUpfL-Q_2q9C815lk5_8yRjMmqKXfgVveHxlnbhEQARYo8SWWVZK2hsC622DW8SyvgRWJiFeP8Ciy_A"/>
+<div class="absolute top-4 left-4 bg-surface/90 backdrop-blur-sm text-primary font-caption text-caption px-3 py-1 rounded-full">Tech</div>
+</div>
+<div class="p-stack-md flex flex-col flex-grow">
+<span class="text-outline font-caption text-caption mb-2">Oct 05, 2024</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-stack-sm text-[24px] leading-tight group-hover:text-secondary transition-colors">AgriTech Subsidiary Integrates AI for Yield Prediction</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-stack-md">Implementing advanced machine learning models to provide farmers with highly accurate crop yield forecasts, improving food security and resource management.</p>
+<div class="mt-auto flex items-center text-secondary font-label-bold text-label-bold opacity-0 group-hover:opacity-100 transform -translate-x-4 group-hover:translate-x-0 transition-all duration-300">
+                            Read Article <span class="material-symbols-outlined ml-1 text-sm">east</span>
+</div>
+</div>
+</article>
+</div>
+<div class="mt-stack-lg flex justify-center reveal-fade-up">
+<button class="bg-transparent text-secondary border border-secondary font-label-bold text-label-bold py-3 px-8 rounded hover:bg-secondary/5 transition-colors duration-300">
+                    Load More News
+                </button>
+</div>
+</div>
+</section>
+<!-- Newsletter Subscription -->
+<section class="py-section-padding px-margin-mobile md:px-margin-desktop bg-primary text-on-primary">
+<div class="max-w-4xl mx-auto text-center reveal-fade-up">
+<h2 class="font-headline-md text-headline-md mb-stack-sm">Stay Ahead of the Curve</h2>
+<p class="font-body-lg text-body-lg text-on-primary/80 mb-stack-lg">Subscribe to our quarterly newsletter for deep dives into East African market trends and exclusive updates from Duara Group executives.</p>
+<form class="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto">
+<input class="flex-grow bg-surface-container-lowest/10 border border-outline-variant/50 rounded px-4 py-3 text-on-primary placeholder:text-on-primary/50 focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-all" placeholder="Enter your business email" required="" type="email"/>
+<button class="bg-secondary text-on-primary font-label-bold text-label-bold py-3 px-8 rounded hover:bg-secondary-container hover:text-on-secondary-container transition-colors duration-300 whitespace-nowrap" type="submit">
+                    Subscribe Now
+                </button>
+</form>
+<p class="font-caption text-caption text-on-primary/60 mt-4">By subscribing, you agree to our Privacy Policy. We respect your inbox.</p>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-stack-lg bg-primary dark:bg-tertiary-container border-t border-outline-variant/10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<!-- Brand Column -->
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-md text-headline-md text-on-primary mb-stack-sm">Duara Group</div>
+<p class="font-caption text-caption text-on-primary/70 max-w-xs">Driving sustainable growth and institutional trust across East Africa.</p>
+</div>
+<!-- Links Columns -->
+<div class="col-span-1 md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-8">
+<div class="flex flex-col space-y-3">
+<a class="font-body-md text-body-md text-on-primary/80 dark:text-on-tertiary-container/80 hover:text-white hover:translate-x-1 transition-transform duration-200" href="#">Company Overview</a>
+<a class="font-body-md text-body-md text-on-primary/80 dark:text-on-tertiary-container/80 hover:text-white hover:translate-x-1 transition-transform duration-200" href="#">Subsidiary Links</a>
+</div>
+<div class="flex flex-col space-y-3">
+<a class="font-body-md text-body-md text-on-primary/80 dark:text-on-tertiary-container/80 hover:text-white hover:translate-x-1 transition-transform duration-200" href="#">Regional Presence</a>
+<a class="font-body-md text-body-md text-on-primary/80 dark:text-on-tertiary-container/80 hover:text-white hover:translate-x-1 transition-transform duration-200" href="#">Careers</a>
+</div>
+<div class="flex flex-col space-y-3">
+<a class="font-body-md text-body-md text-on-primary/80 dark:text-on-tertiary-container/80 hover:text-white hover:translate-x-1 transition-transform duration-200" href="#">CSR</a>
+<a class="font-body-md text-body-md text-on-primary/80 dark:text-on-tertiary-container/80 hover:text-white hover:translate-x-1 transition-transform duration-200" href="#">Privacy Policy</a>
+</div>
+</div>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mt-stack-lg pt-stack-sm border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center text-on-primary/60 font-caption text-caption">
+<p>© 2024 Duara Group. All Rights Reserved.</p>
+<div class="flex space-x-4 mt-4 md:mt-0">
+<a class="hover:text-white transition-colors" href="#"><span class="material-symbols-outlined text-lg">language</span></a>
+<a class="hover:text-white transition-colors" href="#"><span class="material-symbols-outlined text-lg">mail</span></a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple nav scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-md');
+                nav.classList.replace('bg-surface/85', 'bg-surface/95');
+            } else {
+                nav.classList.remove('shadow-md');
+                nav.classList.replace('bg-surface/95', 'bg-surface/85');
+            }
+        });
+
+        // Intersection Observer for scroll animations
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check for prefers-reduced-motion
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            
+            if (!prefersReducedMotion) {
+                const revealElements = document.querySelectorAll('.reveal-fade-up');
+                
+                const revealObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-revealed');
+                            // Stop observing once revealed
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.15 // Trigger when 15% of the element is visible
+                });
+
+                revealElements.forEach(element => {
+                    revealObserver.observe(element);
+                });
+            } else {
+                // If reduced motion is preferred, reveal everything immediately
+                 const revealElements = document.querySelectorAll('.reveal-fade-up');
+                 revealElements.forEach(element => {
+                     element.classList.add('is-revealed');
+                     element.style.transition = 'none';
+                 });
+            }
+        });
+    </script>
+</body></html>

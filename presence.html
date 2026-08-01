@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>East Africa Presence | Duara Group</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "error-container": "#ffdad6",
+                      "surface": "#f9f9fc",
+                      "on-primary": "#ffffff",
+                      "secondary": "#466800",
+                      "surface-bright": "#f9f9fc",
+                      "on-surface-variant": "#414843",
+                      "tertiary-fixed": "#e1e3e4",
+                      "error": "#ba1a1a",
+                      "background": "#f9f9fc",
+                      "secondary-fixed-dim": "#a5d654",
+                      "on-secondary-fixed-variant": "#344e00",
+                      "secondary-fixed": "#c0f36d",
+                      "surface-variant": "#e2e2e5",
+                      "tertiary-container": "#2a2d2e",
+                      "surface-container-high": "#e8e8ea",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary-fixed-dim": "#c5c7c8",
+                      "primary-fixed-dim": "#a6d0b6",
+                      "surface-tint": "#406651",
+                      "surface-container-highest": "#e2e2e5",
+                      "on-tertiary-fixed": "#191c1d",
+                      "surface-dim": "#dadadc",
+                      "inverse-surface": "#2f3133",
+                      "on-primary-fixed": "#002112",
+                      "on-error": "#ffffff",
+                      "surface-container-low": "#f3f3f6",
+                      "on-secondary": "#ffffff",
+                      "surface-container": "#eeeef0",
+                      "on-primary-fixed-variant": "#284e3a",
+                      "on-tertiary-fixed-variant": "#454748",
+                      "primary": "#001d0f",
+                      "on-primary-container": "#749d85",
+                      "on-background": "#1a1c1e",
+                      "primary-fixed": "#c1edd1",
+                      "on-tertiary-container": "#929495",
+                      "primary-container": "#0a3321",
+                      "inverse-primary": "#a6d0b6",
+                      "tertiary": "#161819",
+                      "inverse-on-surface": "#f0f0f3",
+                      "on-tertiary": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "outline-variant": "#c1c8c1",
+                      "on-surface": "#1a1c1e",
+                      "on-secondary-container": "#4b6f00",
+                      "secondary-container": "#c0f36d",
+                      "on-secondary-fixed": "#121f00",
+                      "outline": "#717973"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "stack-md": "24px",
+                      "section-padding": "120px",
+                      "gutter": "32px",
+                      "container-max": "1280px",
+                      "stack-sm": "8px",
+                      "margin-mobile": "20px",
+                      "stack-lg": "80px",
+                      "margin-desktop": "64px"
+              },
+              "fontFamily": {
+                      "headline-lg-mobile": [
+                              "Montserrat"
+                      ],
+                      "headline-md": [
+                              "Montserrat"
+                      ],
+                      "caption": [
+                              "Inter"
+                      ],
+                      "label-bold": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Montserrat"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-xl": [
+                              "Montserrat"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "caption": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "label-bold": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-xl": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .glass-header {
+            transition: all 0.3s ease;
+        }
+        .glass-header.scrolled {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(193, 200, 193, 0.3);
+        }
+        .map-region {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .map-region:hover {
+            stroke: #c0f36d; /* Lime Green Accent */
+            stroke-width: 2px;
+            filter: drop-shadow(0 0 8px rgba(192, 243, 109, 0.5));
+        }
+        .level-1-shadow {
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
+        }
+        .level-2-shadow {
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Scroll Reveal Animations */
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-up.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+        .delay-400 { transition-delay: 400ms; }
+
+        @media (prefers-reduced-motion: reduce) {
+            .reveal-up {
+                transition: none;
+                opacity: 1;
+                transform: none;
+            }
+        }
+      </style>
+<meta content="Headquartered in Nairobi, Kenya, Duara Group serves businesses across East Africa including Uganda, Tanzania, Rwanda, Burundi, and more." name="description"/></head>
+<body class="bg-surface text-on-surface font-body-md antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 transition-all duration-300 ease-in-out glass-header bg-surface/85 dark:bg-primary/85 backdrop-blur-xl border-b border-outline-variant/30 shadow-sm h-20" id="main-header">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto h-full">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight">
+                Duara Group
+            </div>
+<nav class="hidden md:flex space-x-8 items-center h-full">
+<a class="font-body-md text-body-md lg:font-label-bold lg:text-label-bold text-on-surface-variant dark:text-on-surface hover:text-secondary-container transition-all duration-300" href="#">Home</a>
+<a class="font-body-md text-body-md lg:font-label-bold lg:text-label-bold text-on-surface-variant dark:text-on-surface hover:text-secondary-container transition-all duration-300" href="#">About</a>
+<a class="font-body-md text-body-md lg:font-label-bold lg:text-label-bold text-on-surface-variant dark:text-on-surface hover:text-secondary-container transition-all duration-300" href="#">Companies</a>
+<a class="font-body-md text-body-md lg:font-label-bold lg:text-label-bold text-secondary font-bold border-b-2 border-secondary pb-1 h-full flex items-center" href="#">East Africa</a>
+<a class="font-body-md text-body-md lg:font-label-bold lg:text-label-bold text-on-surface-variant dark:text-on-surface hover:text-secondary-container transition-all duration-300" href="#">CSR</a>
+<a class="font-body-md text-body-md lg:font-label-bold lg:text-label-bold text-on-surface-variant dark:text-on-surface hover:text-secondary-container transition-all duration-300" href="#">News</a>
+<a class="font-body-md text-body-md lg:font-label-bold lg:text-label-bold text-on-surface-variant dark:text-on-surface hover:text-secondary-container transition-all duration-300" href="#">Careers</a>
+<a class="font-body-md text-body-md lg:font-label-bold lg:text-label-bold text-on-surface-variant dark:text-on-surface hover:text-secondary-container transition-all duration-300" href="#">Contact</a>
+</nav>
+<a class="hidden lg:inline-flex bg-primary text-on-primary px-6 py-3 rounded font-label-bold text-label-bold hover:bg-primary-container transition-colors items-center justify-center" href="#">
+                Partner With Us
+            </a>
+<!-- Mobile Menu Toggle (Minimal) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[716px] flex items-center justify-center overflow-hidden bg-primary">
+<div class="absolute inset-0 z-0">
+<div class="bg-cover bg-center w-full h-full opacity-60" data-alt="A wide, sweeping aerial photograph of a bustling, modern East African city skyline at golden hour. The image features sleek, contemporary glass skyscrapers reflecting the warm sunset light, integrated with modern infrastructure like elevated highways. The mood is highly optimistic, corporate, and dynamic, emphasizing rapid growth and structural integrity. The color palette is dominated by deep corporate blacks, crisp whites, and the warm, golden hues of the setting sun, aligning with a premium enterprise aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCOq3gZzpzDnOL1UwB1dnRJChWKawek-UTJ6348-dmmJe0OB4ZhUOAtUk-vZ7fleGr4J5roa6bB-vwiHcIgz8Bs3EtAgoZNvtNCj3Bz9zkXh3UE4s5OrYZ80AdYsyohHG6CgvfS7oUGsIKVWGr1j_FiMdJC9Rnyj9k-QhVEY2k3xApSuasS27lbjgKCA9AKiYbnu3feqsgwAN3Fy3H45dzutdke2pTGydhe3IiIgc7lQ8QmeXlLPiL6rg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/80 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center mt-20 reveal-up">
+<h1 class="font-headline-xl text-headline-xl text-on-primary mb-stack-sm md:mb-stack-md">
+                    Powering East Africa's Future
+                </h1>
+<p class="font-body-lg text-body-lg text-on-primary/90 max-w-2xl mx-auto mb-stack-lg">
+                    A deeply rooted presence across the region, driving sustainable growth through strategic investments in critical infrastructure, industry, and innovation.
+                </p>
+</div>
+</section>
+<!-- Interactive Map & Stats Section -->
+<section class="py-section-padding bg-surface">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Stats / Text Block -->
+<div class="lg:col-span-5 order-2 lg:order-1">
+<div class="reveal-up">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">
+                            Regional Reach
+                        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg">
+                            Our operational footprint spans key economic hubs, providing a robust platform for scalable enterprise solutions and cross-border synergy.
+                        </p>
+</div>
+<div class="grid grid-cols-2 gap-stack-md">
+<div class="p-6 bg-surface-container-lowest rounded-xl level-1-shadow border border-surface-variant/50 reveal-up delay-100">
+<div class="font-headline-lg text-headline-lg text-secondary mb-2">5</div>
+<div class="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-wider">Countries</div>
+</div>
+<div class="p-6 bg-surface-container-lowest rounded-xl level-1-shadow border border-surface-variant/50 reveal-up delay-200">
+<div class="font-headline-lg text-headline-lg text-secondary mb-2">12M+</div>
+<div class="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-wider">Lives Impacted</div>
+</div>
+<div class="p-6 bg-surface-container-lowest rounded-xl level-1-shadow border border-surface-variant/50 reveal-up delay-300">
+<div class="font-headline-lg text-headline-lg text-secondary mb-2">24</div>
+<div class="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-wider">Subsidiaries</div>
+</div>
+<div class="p-6 bg-surface-container-lowest rounded-xl level-1-shadow border border-surface-variant/50 reveal-up delay-400">
+<div class="font-headline-lg text-headline-lg text-secondary mb-2">$1.2B</div>
+<div class="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-wider">Asset Base</div>
+</div>
+</div>
+</div>
+<!-- SVG Map Placeholder -->
+<div class="lg:col-span-7 order-1 lg:order-2 relative min-h-[500px] flex items-center justify-center bg-surface-container-low rounded-xl overflow-hidden border border-surface-variant/30 reveal-up delay-200">
+<!-- In a real scenario, an actual intricate SVG path would go here. Using a stylized placeholder for demonstration -->
+<div class="text-center p-8">
+<span class="material-symbols-outlined text-6xl text-outline mb-4 opacity-50" style="font-variation-settings: 'FILL' 0;">map</span>
+<p class="font-label-bold text-label-bold text-on-surface-variant">Interactive SVG Map of East Africa Rendered Here</p>
+<p class="font-caption text-caption text-outline mt-2 max-w-xs mx-auto">Hover states highlight active regions (Kenya, Uganda, Tanzania, Rwanda, Ethiopia) in Forest Green.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Countries Operations (Bento Grid Style) -->
+<section class="py-section-padding bg-surface-container-low border-t border-surface-variant">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-stack-lg reveal-up">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-stack-sm">
+                        Strategic Operations
+                    </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">
+                        Tailored enterprise strategies executing across distinct regulatory and economic landscapes.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-stack-md auto-rows-[300px]">
+<!-- Kenya (Large) -->
+<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-xl level-1-shadow bg-primary reveal-up delay-100">
+<div class="absolute inset-0 bg-cover bg-center w-full h-full opacity-70 group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="A striking professional photograph of a state-of-the-art logistics hub in Nairobi, Kenya. The image highlights massive, clean white warehouses and modern transport infrastructure set against a bright, clear sky. High-contrast lighting emphasizes the clean lines and scale of the operation. The aesthetic is corporate, modern, and minimalist, utilizing deep greens, crisp whites, and sharp shadows to convey efficiency and institutional trust." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD7-8I9WGJ40PZYrKOXeGoWnIiOH_4LEXdI0Uo6BCGrzrKraZ4B57aTLHJPL634yNEufvYxc7TI1TdMqINGX1mkEYkLfU2ANtvi3O5s2W9igaKHTGCwTvCPdy8n6t6izwKyVOx1ZC_Wnnta4Olh10Tzenv4aWyrfdPeqRSromDJD9fAz6Ev5u9fEIBHni8tcYXXuF4ZAz5XuS6Uawx0T8z4xKtgXy84x4u-MboPCx6m-M-iD0OUJihNIQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<h3 class="font-headline-md text-headline-md text-on-primary mb-2">Kenya</h3>
+<p class="font-body-md text-body-md text-on-primary/90 max-w-md">Our regional headquarters, focusing on advanced logistics, fintech integration, and sustainable energy projects driving the national grid.</p>
+</div>
+</div>
+<!-- Uganda -->
+<div class="md:col-span-2 md:row-span-1 relative group overflow-hidden rounded-xl level-1-shadow bg-surface-container-lowest border border-surface-variant/50 flex flex-col justify-end p-6 hover:level-2-shadow transition-shadow reveal-up delay-200">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Uganda</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Spearheading agribusiness innovations and high-yield processing facilities to maximize export potential.</p>
+</div>
+<!-- Tanzania -->
+<div class="md:col-span-1 md:row-span-1 relative group overflow-hidden rounded-xl level-1-shadow bg-surface-container-lowest border border-surface-variant/50 p-6 flex flex-col justify-between hover:level-2-shadow transition-shadow reveal-up delay-300">
+<span class="material-symbols-outlined text-secondary text-3xl">directions_boat</span>
+<div>
+<h3 class="font-label-bold text-label-bold text-primary mb-1 text-lg">Tanzania</h3>
+<p class="font-caption text-caption text-on-surface-variant">Maritime logistics and coastal infrastructure development.</p>
+</div>
+</div>
+<!-- Rwanda -->
+<div class="md:col-span-1 md:row-span-1 relative group overflow-hidden rounded-xl level-1-shadow bg-surface-container-lowest border border-surface-variant/50 p-6 flex flex-col justify-between hover:level-2-shadow transition-shadow reveal-up delay-400">
+<span class="material-symbols-outlined text-secondary text-3xl">memory</span>
+<div>
+<h3 class="font-label-bold text-label-bold text-primary mb-1 text-lg">Rwanda</h3>
+<p class="font-caption text-caption text-on-surface-variant">Tech incubator investments and smart-city infrastructure.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-lg bg-primary dark:bg-tertiary-container grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flat no shadows">
+<div class="flex flex-col space-y-stack-sm md:col-span-1">
+<div class="font-headline-md text-headline-md text-on-primary">
+                Duara Group
+            </div>
+<p class="font-body-md text-body-md text-on-primary/80 dark:text-on-tertiary-container/80 mt-4">
+                © 2024 Duara Group. All Rights Reserved.
+            </p>
+</div>
+<div class="md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-stack-md font-body-md text-body-md">
+<div class="flex flex-col space-y-3">
+<a class="text-on-primary/80 dark:text-on-tertiary-container/80 hover:text-white hover:translate-x-1 transition-transform duration-200 opacity-90 hover:opacity-100 transition-opacity" href="#">Company Overview</a>
+<a class="text-on-primary/80 dark:text-on-tertiary-container/80 hover:text-white hover:translate-x-1 transition-transform duration-200 opacity-90 hover:opacity-100 transition-opacity" href="#">Subsidiary Links</a>
+</div>
+<div class="flex flex-col space-y-3">
+<a class="text-secondary-fixed font-bold hover:text-white hover:translate-x-1 transition-transform duration-200 opacity-90 hover:opacity-100 transition-opacity" href="#">Regional Presence</a>
+<a class="text-on-primary/80 dark:text-on-tertiary-container/80 hover:text-white hover:translate-x-1 transition-transform duration-200 opacity-90 hover:opacity-100 transition-opacity" href="#">Careers</a>
+</div>
+<div class="flex flex-col space-y-3 col-span-2 md:col-span-1">
+<a class="text-on-primary/80 dark:text-on-tertiary-container/80 hover:text-white hover:translate-x-1 transition-transform duration-200 opacity-90 hover:opacity-100 transition-opacity" href="#">CSR</a>
+<a class="text-on-primary/80 dark:text-on-tertiary-container/80 hover:text-white hover:translate-x-1 transition-transform duration-200 opacity-90 hover:opacity-100 transition-opacity" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll effect for header glassmorphism
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 20) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Intersection Observer for Scroll Reveal
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.reveal-up').forEach(el => observer.observe(el));
+        });
+    </script>
+</body></html>
