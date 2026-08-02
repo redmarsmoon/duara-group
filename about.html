@@ -3,257 +3,412 @@
 <html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>About Us | Duara Group</title>
+<title>About - Duara Group</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "error-container": "#ffdad6",
-                    "surface": "#f9f9fc",
-                    "on-primary": "#ffffff",
-                    "secondary": "#466800",
-                    "surface-bright": "#f9f9fc",
-                    "on-surface-variant": "#414843",
-                    "tertiary-fixed": "#e1e3e4",
-                    "error": "#ba1a1a",
-                    "background": "#f9f9fc",
-                    "secondary-fixed-dim": "#a5d654",
-                    "on-secondary-fixed-variant": "#344e00",
-                    "secondary-fixed": "#c0f36d",
-                    "surface-variant": "#e2e2e5",
-                    "tertiary-container": "#2a2d2e",
-                    "surface-container-high": "#e8e8ea",
-                    "surface-container-lowest": "#ffffff",
-                    "tertiary-fixed-dim": "#c5c7c8",
-                    "primary-fixed-dim": "#a6d0b6",
-                    "surface-tint": "#406651",
-                    "surface-container-highest": "#e2e2e5",
-                    "on-tertiary-fixed": "#191c1d",
-                    "surface-dim": "#dadadc",
-                    "inverse-surface": "#2f3133",
-                    "on-primary-fixed": "#002112",
-                    "on-error": "#ffffff",
-                    "surface-container-low": "#f3f3f6",
-                    "on-secondary": "#ffffff",
-                    "surface-container": "#eeeef0",
-                    "on-primary-fixed-variant": "#284e3a",
-                    "on-tertiary-fixed-variant": "#454748",
-                    "primary": "#001d0f",
-                    "on-primary-container": "#749d85",
-                    "on-background": "#1a1c1e",
-                    "primary-fixed": "#c1edd1",
-                    "on-tertiary-container": "#929495",
-                    "primary-container": "#0a3321",
-                    "inverse-primary": "#a6d0b6",
-                    "tertiary": "#161819",
-                    "inverse-on-surface": "#f0f0f3",
-                    "on-tertiary": "#ffffff",
-                    "on-error-container": "#93000a",
-                    "outline-variant": "#c1c8c1",
-                    "on-surface": "#1a1c1e",
-                    "on-secondary-container": "#4b6f00",
-                    "secondary-container": "#c0f36d",
-                    "on-secondary-fixed": "#121f00",
-                    "outline": "#717973"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "spacing": {
-                    "stack-md": "24px",
-                    "section-padding": "120px",
-                    "gutter": "32px",
-                    "container-max": "1280px",
-                    "stack-sm": "8px",
-                    "margin-mobile": "20px",
-                    "stack-lg": "80px",
-                    "margin-desktop": "64px"
-            },
-            "fontFamily": {
-                    "headline-lg-mobile": ["Montserrat"],
-                    "headline-md": ["Montserrat"],
-                    "caption": ["Inter"],
-                    "label-bold": ["Inter"],
-                    "headline-lg": ["Montserrat"],
-                    "body-lg": ["Inter"],
-                    "body-md": ["Inter"],
-                    "headline-xl": ["Montserrat"]
-            },
-            "fontSize": {
-                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
-                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
-                    "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
-                    "label-bold": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                    "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
-                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                    "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
-            }
-          }
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary": "#002516",
+                      "on-primary-fixed-variant": "#1e5038",
+                      "on-error": "#ffffff",
+                      "secondary": "#446900",
+                      "on-tertiary-fixed": "#191c1d",
+                      "on-tertiary": "#ffffff",
+                      "surface-container": "#edeeea",
+                      "on-tertiary-container": "#9c9e9f",
+                      "surface": "#f9faf6",
+                      "secondary-fixed-dim": "#a6d55f",
+                      "surface-variant": "#e1e3df",
+                      "on-secondary": "#ffffff",
+                      "primary-fixed": "#b9efce",
+                      "error": "#ba1a1a",
+                      "on-secondary-fixed": "#121f00",
+                      "background": "#f9faf6",
+                      "outline-variant": "#c0c9c1",
+                      "on-tertiary-fixed-variant": "#454748",
+                      "inverse-on-surface": "#f0f1ed",
+                      "surface-container-highest": "#e1e3df",
+                      "tertiary-container": "#323536",
+                      "surface-bright": "#f9faf6",
+                      "surface-tint": "#37684f",
+                      "surface-container-low": "#f3f4f0",
+                      "primary-container": "#063d27",
+                      "surface-container-high": "#e7e9e5",
+                      "secondary-fixed": "#c1f278",
+                      "on-surface": "#191c1a",
+                      "primary-fixed-dim": "#9ed2b3",
+                      "secondary-container": "#beef75",
+                      "outline": "#717973",
+                      "surface-dim": "#d9dad7",
+                      "on-secondary-fixed-variant": "#324f00",
+                      "on-background": "#191c1a",
+                      "tertiary-fixed": "#e1e3e4",
+                      "on-primary": "#ffffff",
+                      "on-surface-variant": "#414943",
+                      "error-container": "#ffdad6",
+                      "surface-container-lowest": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "on-primary-container": "#76a88b",
+                      "inverse-primary": "#9ed2b3",
+                      "on-primary-fixed": "#002112",
+                      "inverse-surface": "#2e312f",
+                      "on-secondary-container": "#486d00",
+                      "tertiary": "#1d2021",
+                      "tertiary-fixed-dim": "#c5c7c8"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "section-padding": "80px",
+                      "margin-mobile": "20px",
+                      "stack-sm": "8px",
+                      "stack-lg": "32px",
+                      "stack-md": "16px",
+                      "container-max": "1280px",
+                      "margin-desktop": "64px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "display-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "headline-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "headline-lg-mobile": [
+                              "Hanken Grotesk"
+                      ],
+                      "label-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "label-sm": [
+                              "Hanken Grotesk"
+                      ],
+                      "headline-lg": [
+                              "Hanken Grotesk"
+                      ]
+              },
+              "fontSize": {
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "36px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
         }
-      }
-    </script>
+      </script>
 <style>
-        .material-symbols-outlined {
-          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        body {
+            font-family: 'Hanken Grotesk', sans-serif;
         }
-        html { scroll-behavior: smooth; }
-        .hero-clip { clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
-        
-        /* Scroll Reveal Animations */
-        .reveal {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1), transform 0.8s cubic-bezier(0.5, 0, 0, 1);
-        }
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .delay-100 { transition-delay: 100ms; }
-        .delay-200 { transition-delay: 200ms; }
-        .delay-300 { transition-delay: 300ms; }
-        
-        @media (prefers-reduced-motion: reduce) {
-            .reveal {
-                transition: none;
-                opacity: 1;
-                transform: none;
-            }
-        }
-    </style>
-<meta content="Learn about Duara Group's vision, mission, and core values. We are an East African company investing in technology, business development, and education." name="description"/></head>
-<body class="bg-background text-on-background font-body-md text-body-md antialiased overflow-x-hidden">
+      </style>
+</head>
+<body class="bg-surface text-on-surface antialiased pt-20">
 <!-- TopNavBar -->
-<header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl border-b border-outline-variant/30 shadow-sm transition-all duration-300 ease-in-out">
-<div class="flex justify-between items-center px-margin-desktop max-w-container-max mx-auto h-20 md:px-margin-mobile">
-<a class="font-headline-md text-headline-md font-bold text-primary" href="#">Duara Group</a>
-<nav class="hidden md:flex gap-gutter items-center">
-<a class="text-on-surface-variant hover:text-secondary-container transition-all duration-300 font-body-md text-body-md lg:font-label-bold lg:text-label-bold" href="index.html">Home</a>
-<a class="text-secondary font-bold border-b-2 border-secondary pb-1 hover:text-secondary-container transition-all duration-300 font-body-md text-body-md lg:font-label-bold lg:text-label-bold" href="about.html">About</a>
-<a class="text-on-surface-variant hover:text-secondary-container transition-all duration-300 font-body-md text-body-md lg:font-label-bold lg:text-label-bold" href="companies.html">Companies</a>
-<a class="text-on-surface-variant hover:text-secondary-container transition-all duration-300 font-body-md text-body-md lg:font-label-bold lg:text-label-bold" href="presence.html">East Africa</a>
-<a class="text-on-surface-variant hover:text-secondary-container transition-all duration-300 font-body-md text-body-md lg:font-label-bold lg:text-label-bold" href="csr.html">CSR</a>
-<a class="text-on-surface-variant hover:text-secondary-container transition-all duration-300 font-body-md text-body-md lg:font-label-bold lg:text-label-bold" href="news.html">News</a>
-<a class="text-on-surface-variant hover:text-secondary-container transition-all duration-300 font-body-md text-body-md lg:font-label-bold lg:text-label-bold" href="careers.html">Careers</a>
-<a class="text-on-surface-variant hover:text-secondary-container transition-all duration-300 font-body-md text-body-md lg:font-label-bold lg:text-label-bold" href="contact.html">Contact</a>
-</nav>
-<a class="hidden md:block bg-primary text-on-primary font-label-bold text-label-bold py-3 px-6 rounded-lg hover:bg-primary-container transition-colors" href="contact.html">
+<nav class="fixed top-0 w-full z-50 bg-surface dark:bg-inverse-surface border-b border-outline-variant dark:border-outline flat no shadows">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="font-display-lg text-headline-md md:text-display-lg font-bold text-primary dark:text-primary-fixed">
+                Duara Group
+            </div>
+<div class="hidden md:flex items-center space-x-gutter">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors" href="index.html">Home</a>
+<a class="font-label-md text-label-md text-primary dark:text-primary-fixed font-bold border-b-2 border-primary dark:border-primary-fixed pb-1" href="about.html">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors" href="companies.html">Our Divisions</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors" href="presence.html">East Africa</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors" href="csr.html">CSR</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors" href="news.html">News</a>
+</div>
+<a class="hidden md:block bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded hover:bg-on-primary-fixed-variant transition-colors opacity-90 scale-[0.98] duration-200" href="contact.html">
                 Partner With Us
             </a>
-<!-- Mobile Menu Toggle (Simplified for structural completeness) -->
+<!-- Mobile Menu Button Placeholder -->
 <button class="md:hidden text-primary">
-<span class="material-symbols-outlined text-3xl">menu</span>
+<span class="material-symbols-outlined">menu</span>
 </button>
 </div>
-</header>
-<main class="pt-20">
-<!-- Hero Section -->
-<section class="relative min-h-[716px] flex items-center justify-center hero-clip bg-surface-container-low overflow-hidden">
-<div class="absolute inset-0 z-0">
-<div class="w-full h-full bg-cover bg-center opacity-40" data-alt="A sprawling, high-angle aerial photograph of a rapidly developing, modern East African metropolis at sunrise. The warm golden light hits sleek, newly constructed glass skyscrapers, highlighting the region's economic growth and potential. The cityscape is surrounded by lush green landscapes, blending nature with urban development. The aesthetic is corporate, optimistic, and cinematic, using high-resolution architectural photography style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCNlH5Fhm9RdSjNVY_uH07UahREG1_aoyqw8v8LsAYUKCPgoDY2oL7S_W4dMc-CXm_WStyys4xB9prGCPI2i3VdDz04doKExmZMYHYrPh6RWVQfac1frhFu8-R67-82w5Gtcwrc85cnBI-Lce5brvwl2qJCQjN_J_iC8U6mmEVnPdmfmNwtd8IekV-kgrJOhkeU8G6QJ1QZhMYjmnvVF3kziQ7VYIoUD31REc8f0y7gGIqk7yv1CbOAxQ')"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent"></div>
+</nav>
+<main>
+<!-- Hero / Company Overview -->
+<section class="py-section-padding px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
+<div class="space-y-stack-md">
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary">Building the Future of East Africa</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                        Duara Group is a premier holding company dedicated to strategic investments across diverse sectors in East Africa. We operate with a commitment to sustainable growth, operational excellence, and fostering long-term value for our stakeholders and the communities we serve.
+                    </p>
 </div>
-<div class="relative z-10 max-w-container-max mx-auto px-margin-desktop text-center reveal">
-<h1 class="font-headline-xl text-headline-xl text-primary mb-stack-md hidden md:block">About Duara Group</h1>
-<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-stack-md md:hidden">About Duara Group</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto">
-                    We are an East African company that provides technology, market expansion, and audiovisual services to businesses.
-                </p>
+<div class="relative h-[400px] rounded-lg overflow-hidden border border-outline-variant">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A modern, high-angle architectural photograph of a sleek corporate headquarters in an East African metropolis. The building features extensive glass facades reflecting a bright blue sky. The scene is shot in a clean, minimalist style with high-key lighting, emphasizing structural precision and corporate stability. The surrounding environment includes subtle green landscaping, aligning with a modern, professional, and spacious corporate aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7VnExNGqF9Mr9zfa4o1F2He_VqfM8PrdavpwflPjFXqo4pASEhNMEhrNzSGvZQCMg9naknNmWn_IhWgdO6EOaEcNAweMy8ujTY9944AuitVJCL1nVIkgncZSLwxn3mwHdU5KQTcbTHbQNRVXSmWMdqut6jRusCq4kEbudcAGZZmMRVYkl-6cnYQ1TvEedIDTm0qs31X9rLPhnF9JPKN7HXr9UMHIe6U31t1bYReBd5Cws4ylL7cEVRw"/>
+</div>
 </div>
 </section>
-<!-- Vision & Mission (Bento Grid) -->
-<section class="py-section-padding px-margin-desktop max-w-container-max mx-auto md:px-margin-mobile">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
-<div class="reveal delay-100 bg-surface-container-lowest p-stack-lg rounded-xl shadow-[0px_4px_20px_rgba(0,0,0,0.04)] border border-outline-variant/20 hover:shadow-[0px_10px_30px_rgba(0,0,0,0.08)] transition-shadow duration-300">
-<div class="flex items-center gap-4 mb-stack-md">
-<div class="w-12 h-12 rounded-full bg-primary-fixed/20 flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-2xl" data-icon="visibility">visibility</span>
+<!-- Vision & Mission -->
+<section class="bg-surface-container-low py-section-padding px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-stack-lg">
+<div class="bg-surface p-stack-lg rounded-lg border border-outline-variant space-y-stack-md hover:shadow-[0px_4px_20px_rgba(0,0,0,0.05)] transition-shadow">
+<div class="flex items-center space-x-stack-sm text-primary">
+<span class="material-symbols-outlined text-3xl">visibility</span>
+<h2 class="font-headline-md text-headline-md">Our Vision</h2>
 </div>
-<h2 class="font-headline-md text-headline-md text-primary">Our Vision</h2>
-</div>
-<p class="font-body-lg text-body-lg text-on-surface-variant">
-                        To provide reliable technology and business services to companies across East Africa.
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        To be the preeminent force driving sustainable economic transformation and innovation across the East African region, recognized globally for our commitment to excellence and societal impact.
                     </p>
 </div>
-<div class="reveal delay-200 bg-surface-container-lowest p-stack-lg rounded-xl shadow-[0px_4px_20px_rgba(0,0,0,0.04)] border border-outline-variant/20 hover:shadow-[0px_10px_30px_rgba(0,0,0,0.08)] transition-shadow duration-300">
-<div class="flex items-center gap-4 mb-stack-md">
-<div class="w-12 h-12 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary">
-<span class="material-symbols-outlined text-2xl" data-icon="rocket_launch">rocket_launch</span>
+<div class="bg-surface p-stack-lg rounded-lg border border-outline-variant space-y-stack-md hover:shadow-[0px_4px_20px_rgba(0,0,0,0.05)] transition-shadow">
+<div class="flex items-center space-x-stack-sm text-primary">
+<span class="material-symbols-outlined text-3xl">flag</span>
+<h2 class="font-headline-md text-headline-md">Our Mission</h2>
 </div>
-<h2 class="font-headline-md text-headline-md text-primary">Our Mission</h2>
-</div>
-<p class="font-body-lg text-body-lg text-on-surface-variant">
-                        We build and operate businesses that solve practical problems in tech, market expansion, and event production.
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        To build and scale robust enterprises that deliver superior value through strategic foresight, rigorous operational standards, and a steadfast dedication to ethical business practices.
                     </p>
+</div>
+</div>
+</section>
+<!-- Core Values -->
+<section class="py-section-padding px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-primary text-center mb-stack-lg">Core Values</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-stack-md">
+<!-- Value 1 -->
+<div class="text-center space-y-stack-sm">
+<div class="w-16 h-16 mx-auto bg-primary-container rounded-full flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined">shield</span>
+</div>
+<h3 class="font-headline-md text-body-lg text-on-surface font-semibold">Integrity</h3>
+</div>
+<!-- Value 2 -->
+<div class="text-center space-y-stack-sm">
+<div class="w-16 h-16 mx-auto bg-primary-container rounded-full flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined">lightbulb</span>
+</div>
+<h3 class="font-headline-md text-body-lg text-on-surface font-semibold">Innovation</h3>
+</div>
+<!-- Value 3 -->
+<div class="text-center space-y-stack-sm">
+<div class="w-16 h-16 mx-auto bg-primary-container rounded-full flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined">group</span>
+</div>
+<h3 class="font-headline-md text-body-lg text-on-surface font-semibold">Collaboration</h3>
+</div>
+<!-- Value 4 -->
+<div class="text-center space-y-stack-sm">
+<div class="w-16 h-16 mx-auto bg-primary-container rounded-full flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined">workspace_premium</span>
+</div>
+<h3 class="font-headline-md text-body-lg text-on-surface font-semibold">Excellence</h3>
+</div>
+<!-- Value 5 -->
+<div class="text-center space-y-stack-sm">
+<div class="w-16 h-16 mx-auto bg-primary-container rounded-full flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined">eco</span>
+</div>
+<h3 class="font-headline-md text-body-lg text-on-surface font-semibold">Sustainability</h3>
+</div>
+</div>
+</section>
+<!-- Leadership -->
+<section class="bg-surface-container-low py-section-padding px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-stack-lg">Leadership</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-stack-lg">
+<!-- Profile 1 -->
+<div class="bg-surface rounded-lg border border-outline-variant overflow-hidden hover:shadow-[0px_4px_20px_rgba(0,0,0,0.05)] transition-shadow">
+<div class="aspect-square bg-surface-variant relative">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a mature executive in a tailored dark suit. The portrait is taken in a modern corporate boardroom with expansive windows offering soft, natural lighting. The background is slightly blurred (bokeh) emphasizing a clean, minimalist, and institutional aesthetic. The overall mood is authoritative, approachable, and highly professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOQQEK1_z17kAQe7MqUOMMnVRDmT9IbDvxBKj7SQ9U6OI0gK4H_uxyjifg8e0BfzKuzWT-Ms5Sgpwh6tRt83P2U4cwd34-42Brjy_-uozfdj3zYe24J9d3gTtPw2FjbsQYtxl-WpyG8V-gV6LW0hHC2VdilJOpRIt6PV8cwr9DYsBGmrCyHeATKDMSAC_4cUmdD1cDH17XZ3X276Z2r66UjArQndApnZuub1hrBfb5i5zodtJZtdl5hA"/>
+</div>
+<div class="p-stack-md text-center">
+<h3 class="font-headline-md text-body-lg text-on-surface font-semibold">John Doe</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Chief Executive Officer</p>
+</div>
+</div>
+<!-- Profile 2 -->
+<div class="bg-surface rounded-lg border border-outline-variant overflow-hidden hover:shadow-[0px_4px_20px_rgba(0,0,0,0.05)] transition-shadow">
+<div class="aspect-square bg-surface-variant relative">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a female executive wearing a smart, neutral-toned blazer. The portrait is shot against a minimalist, bright office setting with subtle geometric architectural elements in the soft-focus background. The lighting is high-key and flattering, conveying trust, precision, and modern corporate leadership." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtcmcJT_eMy-B4UYiM2wYTfQ2CYdXoRmc4wneSTVx68lmivHNmwBw5xqs2lwkY1MaadDxVLGVK0nNGnUcZDfaPewITUsQ3fx-f5ZCj0poNuWzfi_PweBnPGc3ySorYPwA-7y9qwr2zBgUa5We91IkGu0ZvNpeaC_PBkuEFFo-d0MdnyOSE56AWMchI-Jf3OVv5IMCNgaxsdhHsLfoD-bD4tMBh9ozUe1Tee4Vn_GOSIKv0HUvAh2z0SQ"/>
+</div>
+<div class="p-stack-md text-center">
+<h3 class="font-headline-md text-body-lg text-on-surface font-semibold">Jane Smith</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Chief Operations Officer</p>
+</div>
+</div>
+<!-- Profile 3 -->
+<div class="bg-surface rounded-lg border border-outline-variant overflow-hidden hover:shadow-[0px_4px_20px_rgba(0,0,0,0.05)] transition-shadow">
+<div class="aspect-square bg-surface-variant relative">
+<img class="w-full h-full object-cover" data-alt="A professional portrait of a senior male financial executive in a crisp white shirt and subtle patterned tie. The setting is a bright, contemporary office environment with clean lines and a sense of spaciousness. The lighting emphasizes a polished, secure, and established corporate aesthetic appropriate for a major holding group." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc_jydhchF4PgA00h25AUtLvoJak_00X2Pt-60ekrWC2Axsa1b1VTVov6nlXzDhIsx4AfNNV6zhX0uRtKFR-EBQ9EgAeoGkW7hqKsWl9lacWB9_mwf-uMJHdB_zMlfHGaWjcUABbbz2r2dpjPfUrBEcY4xSXoNuCIO3cMEC_EwYzlV9O1wdvzCXbKR6mAjsyXx1g7El80F2OYRKWVqHj9jYB94v2OXIUF7o5t-PGIiCQPkJrkddkQJWg"/>
+</div>
+<div class="p-stack-md text-center">
+<h3 class="font-headline-md text-body-lg text-on-surface font-semibold">Michael Chen</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Chief Financial Officer</p>
+</div>
+</div>
+<!-- Profile 4 -->
+<div class="bg-surface rounded-lg border border-outline-variant overflow-hidden hover:shadow-[0px_4px_20px_rgba(0,0,0,0.05)] transition-shadow">
+<div class="aspect-square bg-surface-variant relative">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of an executive with short hair, wearing a dark professional suit jacket. The background features a minimalist, light gray corporate lobby with subtle architectural details. The image uses sharp, high-contrast lighting to convey a sense of modern corporate clarity, stability, and institutional trust." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0PhSoxHUHN7rl88ybyUi08N2fme2_6qnSubB46BliySaMIr2M7DLM2yF8EIMX1orA_GUQn3stVu9C0mayWbrP2ss5lnjouO05W_fXxJp2l7ki9KUgKDkxuD7Y-t1lsTC_pOZDOHZAx8rxt_nfSKq-fKOfYdY2DsfXGLYZ9Ejki8ChfMDodVF4aNQur3raSSvNpTGqEQVcDtJR0yywIdlfyBV0l04em2JzONugY9jPSAaRNPlRi2KJBg"/>
+</div>
+<div class="p-stack-md text-center">
+<h3 class="font-headline-md text-body-lg text-on-surface font-semibold">Sarah Kamau</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Director of Strategy</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Company Timeline -->
+<section class="py-section-padding px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-stack-lg text-center">Our Journey</h2>
+<div class="relative max-w-3xl mx-auto">
+<!-- Vertical Line -->
+<div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-outline-variant transform md:-translate-x-1/2"></div>
+<div class="space-y-stack-lg">
+<!-- Milestone 1 -->
+<div class="relative flex flex-col md:flex-row items-center">
+<div class="hidden md:block md:w-1/2 pr-stack-md text-right">
+<h3 class="font-headline-md text-headline-md text-primary">2010</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Foundation of Duara Group with a focus on regional logistics.</p>
+</div>
+<div class="absolute left-4 md:left-1/2 w-3 h-3 bg-primary rounded-full transform -translate-x-1.5 md:-translate-x-1.5 mt-2 md:mt-0 ring-4 ring-surface"></div>
+<div class="md:hidden ml-10 space-y-1">
+<h3 class="font-headline-md text-headline-md text-primary">2010</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Foundation of Duara Group with a focus on regional logistics.</p>
+</div>
+<div class="hidden md:block md:w-1/2 pl-stack-md"></div>
+</div>
+<!-- Milestone 2 -->
+<div class="relative flex flex-col md:flex-row items-center">
+<div class="hidden md:block md:w-1/2 pr-stack-md"></div>
+<div class="absolute left-4 md:left-1/2 w-3 h-3 bg-primary rounded-full transform -translate-x-1.5 md:-translate-x-1.5 mt-2 md:mt-0 ring-4 ring-surface"></div>
+<div class="hidden md:block md:w-1/2 pl-stack-md text-left">
+<h3 class="font-headline-md text-headline-md text-primary">2015</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Expansion into the technology and telecommunications sectors.</p>
+</div>
+<div class="md:hidden ml-10 space-y-1">
+<h3 class="font-headline-md text-headline-md text-primary">2015</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Expansion into the technology and telecommunications sectors.</p>
+</div>
+</div>
+<!-- Milestone 3 -->
+<div class="relative flex flex-col md:flex-row items-center">
+<div class="hidden md:block md:w-1/2 pr-stack-md text-right">
+<h3 class="font-headline-md text-headline-md text-primary">2020</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Launch of our dedicated sustainability and CSR division.</p>
+</div>
+<div class="absolute left-4 md:left-1/2 w-3 h-3 bg-primary rounded-full transform -translate-x-1.5 md:-translate-x-1.5 mt-2 md:mt-0 ring-4 ring-surface"></div>
+<div class="md:hidden ml-10 space-y-1">
+<h3 class="font-headline-md text-headline-md text-primary">2020</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Launch of our dedicated sustainability and CSR division.</p>
+</div>
+<div class="hidden md:block md:w-1/2 pl-stack-md"></div>
+</div>
 </div>
 </div>
 </section>
 </main>
 <!-- Footer -->
-
-
-
-
-
-
-
-
-
-<footer class="bg-primary py-stack-lg transition-opacity opacity-90 hover:opacity-100 mt-section-padding reveal">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto md:px-margin-mobile">
-<div class="flex flex-col gap-4">
-<span class="font-headline-md text-headline-md text-on-primary">Duara Group</span>
-<p class="font-body-md text-body-md text-on-primary/80">© 2024 Duara Group. All Rights Reserved.</p>
+<footer class="bg-surface-container-highest dark:bg-tertiary-container w-full rounded-none border-t border-outline-variant dark:border-outline flat no shadows mt-section-padding">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-padding max-w-container-max mx-auto">
+<!-- Brand & Copyright -->
+<div class="space-y-stack-sm md:col-span-1">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">
+                    Duara Group
+                </div>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container">
+                    © 2024 Duara Group. All Rights Reserved.
+                </p>
 </div>
-<div class="flex flex-col gap-3">
-<a class="font-body-md text-body-md text-on-primary/80 hover:text-white hover:translate-x-1 transition-transform duration-200" href="#">Company Overview</a>
-<a class="font-body-md text-body-md text-on-primary/80 hover:text-white hover:translate-x-1 transition-transform duration-200" href="#">Subsidiary Links</a>
+<!-- Links -->
+<div class="md:col-span-3 grid grid-cols-2 sm:grid-cols-3 gap-gutter">
+<div class="flex flex-col space-y-stack-sm">
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all focus:ring-2 focus:ring-primary dark:focus:ring-primary-fixed focus:ring-offset-2" href="#">Agency</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all focus:ring-2 focus:ring-primary dark:focus:ring-primary-fixed focus:ring-offset-2" href="#">Tech</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all focus:ring-2 focus:ring-primary dark:focus:ring-primary-fixed focus:ring-offset-2" href="#">Audiovisual</a>
 </div>
-<div class="flex flex-col gap-3">
-<a class="font-body-md text-body-md text-on-primary/80 hover:text-white hover:translate-x-1 transition-transform duration-200" href="#">Regional Presence</a>
-<a class="font-body-md text-body-md text-on-primary/80 hover:text-white hover:translate-x-1 transition-transform duration-200" href="careers.html">Careers</a>
+<div class="flex flex-col space-y-stack-sm">
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all focus:ring-2 focus:ring-primary dark:focus:ring-primary-fixed focus:ring-offset-2" href="presence.html">East Africa</a>
+<a class="font-label-sm text-label-sm text-primary dark:text-primary-fixed underline transition-all focus:ring-2 focus:ring-primary dark:focus:ring-primary-fixed focus:ring-offset-2" href="about.html">About</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all focus:ring-2 focus:ring-primary dark:focus:ring-primary-fixed focus:ring-offset-2" href="#">Careers</a>
 </div>
-<div class="flex flex-col gap-3">
-<a class="font-body-md text-body-md text-on-primary/80 hover:text-white hover:translate-x-1 transition-transform duration-200" href="csr.html">CSR</a>
-<a class="font-body-md text-body-md text-on-primary/80 hover:text-white hover:translate-x-1 transition-transform duration-200" href="#">Privacy Policy</a>
+<div class="flex flex-col space-y-stack-sm">
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all focus:ring-2 focus:ring-primary dark:focus:ring-primary-fixed focus:ring-offset-2" href="news.html">News</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all focus:ring-2 focus:ring-primary dark:focus:ring-primary-fixed focus:ring-offset-2" href="csr.html">CSR</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all focus:ring-2 focus:ring-primary dark:focus:ring-primary-fixed focus:ring-offset-2" href="#">Contact</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all focus:ring-2 focus:ring-primary dark:focus:ring-primary-fixed focus:ring-offset-2" href="#">Legal</a>
+</div>
 </div>
 </div>
 </footer>
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        const revealElements = document.querySelectorAll('.reveal');
-        revealElements.forEach(el => {
-            // Respect prefers-reduced-motion
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                observer.observe(el);
-            } else {
-                el.classList.add('active');
-            }
-        });
-    });
-</script>
 </body></html>
