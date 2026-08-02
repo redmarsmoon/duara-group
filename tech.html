@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Duara Tech - Division Overview</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#37684f",
+                        "error": "#ba1a1a",
+                        "on-surface-variant": "#414943",
+                        "on-secondary-fixed-variant": "#324f00",
+                        "background": "#f9faf6",
+                        "outline": "#717973",
+                        "on-primary-fixed-variant": "#1e5038",
+                        "secondary-fixed-dim": "#a6d55f",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#f9faf6",
+                        "inverse-surface": "#2e312f",
+                        "surface-container-high": "#e7e9e5",
+                        "surface-container": "#edeeea",
+                        "tertiary-fixed": "#e1e3e4",
+                        "primary-fixed": "#b9efce",
+                        "on-tertiary-container": "#9c9e9f",
+                        "on-primary-container": "#76a88b",
+                        "tertiary-fixed-dim": "#c5c7c8",
+                        "inverse-on-surface": "#f0f1ed",
+                        "surface-container-low": "#f3f4f0",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-background": "#191c1a",
+                        "on-secondary-fixed": "#121f00",
+                        "on-surface": "#191c1a",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#e1e3df",
+                        "secondary-container": "#beef75",
+                        "secondary": "#446900",
+                        "primary": "#002516",
+                        "tertiary-container": "#323536",
+                        "on-tertiary-fixed": "#191c1d",
+                        "on-secondary-container": "#486d00",
+                        "surface-dim": "#d9dad7",
+                        "on-primary-fixed": "#002112",
+                        "on-tertiary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface-container-highest": "#e1e3df",
+                        "surface": "#f9faf6",
+                        "primary-fixed-dim": "#9ed2b3",
+                        "on-tertiary-fixed-variant": "#454748",
+                        "secondary-fixed": "#c1f278",
+                        "primary-container": "#063d27",
+                        "outline-variant": "#c0c9c1",
+                        "tertiary": "#1d2021",
+                        "inverse-primary": "#9ed2b3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "margin-desktop": "64px",
+                        "stack-lg": "32px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "section-padding": "80px",
+                        "stack-sm": "8px",
+                        "stack-md": "16px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Hanken Grotesk"],
+                        "label-md": ["Hanken Grotesk"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "label-sm": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "display-lg": ["Hanken Grotesk"],
+                        "headline-md": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Hanken Grotesk', sans-serif; background-color: #f9faf6; }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+        .bento-item { border: 1px solid #c0c9c1; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(192, 201, 193, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface dark:bg-inverse-surface border-b border-outline-variant dark:border-outline">
+<div class="flex justify-between items-center h-20 px-margin-desktop max-w-container-max mx-auto">
+<div class="font-display-lg text-display-lg font-bold text-primary dark:text-primary-fixed">
+                Duara Group
+            </div>
+<nav class="hidden md:flex space-x-gutter items-center">
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md hover:bg-surface-container-low dark:hover:bg-tertiary-container py-2 px-4 rounded transition-all" href="index.html">Home</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md hover:bg-surface-container-low dark:hover:bg-tertiary-container py-2 px-4 rounded transition-all" href="about.html">About</a>
+<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary dark:border-primary-fixed pb-1 font-label-md text-label-md" href="companies.html">Our Divisions</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md hover:bg-surface-container-low dark:hover:bg-tertiary-container py-2 px-4 rounded transition-all" href="presence.html">East Africa</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md hover:bg-surface-container-low dark:hover:bg-tertiary-container py-2 px-4 rounded transition-all" href="csr.html">CSR</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md hover:bg-surface-container-low dark:hover:bg-tertiary-container py-2 px-4 rounded transition-all" href="news.html">News</a>
+</nav>
+<div class="hidden md:block">
+<a class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded hover:opacity-90 transition-opacity" href="contact.html">Partner With Us</a>
+</div>
+</div>
+</header>
+<main class="flex-grow pt-[80px]">
+<!-- Hero Section -->
+<section class="relative h-[614px] min-h-[500px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0" data-alt="A modern, abstract digital network visualization representing technology and connectivity. Bright, clean light-mode aesthetic with subtle glowing nodes and soft geometric shapes. The color palette emphasizes crisp whites, light grays, and deep corporate greens. The mood is innovative, stable, and forward-looking, fitting for a major tech division." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA60qlAHga9InCPOtEBukk48o5OCJNjCUwS5v9VbRCFVH1GBOJyCT4gC7u4usOopZEAnFG7sLnoOTaJrMs_pL-5xYMlSVPiygQnRfWIBknCnS_Dr2QD_5lQQfLy3Hd4z-CJzhDnwwqvr3LGfHZE4RFqniC688zHBxSSzUAtv9Wg2KRHqE3o-h-09PmjISU7mhBHL6ung1z5JgFaftOknuHLhCYOFeZBU2EQPwRYH-CBZXlI2paf0R24Kw')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface/90 to-surface/40 z-10"></div>
+<div class="relative z-20 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="flex flex-col justify-center">
+<span class="font-label-md text-label-md text-primary uppercase tracking-wider mb-4">Division Overview</span>
+<h1 class="font-display-lg text-display-lg text-on-surface mb-6">Duara Tech</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-lg">
+                        Driving digital transformation and building scalable technology infrastructure for the modern African enterprise. We specialize in robust, innovative solutions across the tech spectrum.
+                    </p>
+<div>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded hover:opacity-90 transition-opacity flex items-center gap-2">
+                            Visit Official Website
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Focus Areas Bento Grid -->
+<section class="py-section-padding bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="mb-stack-lg text-center md:text-left">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">Core Focus Areas</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Comprehensive technological capabilities driving growth.</p>
+</div>
+<div class="bento-grid">
+<!-- Software Dev -->
+<div class="bento-item bg-surface-container-lowest p-6 rounded-xl col-span-12 md:col-span-8 flex flex-col justify-between hover:shadow-lg transition-shadow duration-300">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">terminal</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Software Development</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Custom enterprise software solutions tailored to complex business requirements. We build scalable, secure, and maintainable systems.</p>
+</div>
+</div>
+<!-- AI -->
+<div class="bento-item bg-surface-container p-6 rounded-xl col-span-12 md:col-span-4 flex flex-col justify-between hover:shadow-lg transition-shadow duration-300 border-none">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Artificial Intelligence</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Integrating predictive analytics, machine learning, and automation into core business processes.</p>
+</div>
+</div>
+<!-- Cloud -->
+<div class="bento-item bg-surface-container-low p-6 rounded-xl col-span-12 md:col-span-4 flex flex-col justify-between hover:shadow-lg transition-shadow duration-300 border-none">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">cloud</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Cloud Infrastructure</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Robust, secure cloud deployment and management services ensuring high availability.</p>
+</div>
+</div>
+<!-- Web Dev -->
+<div class="bento-item bg-surface-container-lowest p-6 rounded-xl col-span-12 md:col-span-4 flex flex-col justify-between hover:shadow-lg transition-shadow duration-300">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">web</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Web Development</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Modern, responsive web applications prioritizing user experience and performance.</p>
+</div>
+</div>
+<!-- Mobile Apps -->
+<div class="bento-item bg-surface-container-lowest p-6 rounded-xl col-span-12 md:col-span-4 flex flex-col justify-between hover:shadow-lg transition-shadow duration-300">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">smartphone</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Mobile Apps</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Native and cross-platform mobile solutions connecting businesses directly to their consumers.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Subdivisions -->
+<section class="py-section-padding bg-surface">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">Subdivisions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Specialized entities operating under the Duara Tech umbrella.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Domain Web Hosting -->
+<div class="glass-card rounded-xl overflow-hidden hover:-translate-y-1 transition-transform duration-300">
+<div class="h-48 bg-surface-container-high relative">
+<img class="w-full h-full object-cover" data-alt="A pristine server room with rows of modern data racks illuminated by cool blue and white LED lights. The aesthetic is clean, industrial, and high-tech, reflecting stable and secure web hosting infrastructure. The mood is professional and institutional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkXcXRzFY4xnflIeWjWXtN7DKKOXiEbVK-8jgM6yptpunBFyVDCP9hQ82dFJj594i4wyqhXqVADwnnXm8M67zsH014_cwlITYeCei4hseWTcHN-kAXqzDOXMlOpCY2rmFLpcpmD2rIDcz6p2WjywYuvZEOCGV5pfh8B7yj5quv8M9gy2RqXPTIhmrmgWOd52QZxVeidsauFgjuNWHg8exDRtrQGWNw2SWCAmbajeXyAxWiycxQnvyWdw"/>
+</div>
+<div class="p-6">
+<div class="inline-block bg-primary/10 text-primary font-label-sm text-label-sm px-2 py-1 rounded mb-4 uppercase tracking-wide">Infrastructure</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Domain Web Hosting</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Reliable, high-performance hosting solutions for enterprises across the region, ensuring maximum uptime and security.</p>
+<a class="text-primary font-label-md text-label-md hover:underline flex items-center gap-1" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</div>
+<!-- Gaibo AI -->
+<div class="glass-card rounded-xl overflow-hidden hover:-translate-y-1 transition-transform duration-300">
+<div class="h-48 bg-surface-container-high relative">
+<img class="w-full h-full object-cover" data-alt="Abstract visualization of neural network pathways glowing in soft white and green hues against a light gray background. It conveys intelligence, processing power, and modern AI algorithms in a clean, corporate style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOPEm4Tuzk0CCz10Vpgk3NX2Zlc5-J2IzfGRyoo7pW9WSX00TcKTm2FMBeKUFIt4N4ANLaGUjcbeCIsuGO5ER9n2bzqbReprmKBR8NXpzniU2-I74yq1Gjj8HLN-qmRpZQEY2wNhj-dOMq_IxiS1MsUW-pbGAVGiAXyfy3NfjYry39JAvEEWDzzQMqCjPzptYk_fWVieRVIz5vuwpK4mfJUHZ-oVZpjji6QTVCyAZthuNpv7gczrN7RA"/>
+</div>
+<div class="p-6">
+<div class="inline-block bg-primary/10 text-primary font-label-sm text-label-sm px-2 py-1 rounded mb-4 uppercase tracking-wide">Artificial Intelligence</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Gaibo AI</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Pioneering AI research and development, creating intelligent systems that automate complex corporate workflows.</p>
+<a class="text-primary font-label-md text-label-md hover:underline flex items-center gap-1" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</div>
+<!-- ScanPay Africa -->
+<div class="glass-card rounded-xl overflow-hidden hover:-translate-y-1 transition-transform duration-300">
+<div class="h-48 bg-surface-container-high relative">
+<img class="w-full h-full object-cover" data-alt="A sleek, modern mobile device displaying a secure digital transaction interface, resting on a minimalist white desk. Soft, natural lighting highlights the device. The aesthetic is financial, trustworthy, and modern, representing digital payments." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWTIHbzQTi2KfotVZBg8OE-rXNm7fY2k6VEh6dqvapPfaogbNzsfkQvaF2F0HYrQDi8HwgP-cbG2k_nS3Yvd-tt1Vy5pAwCTq084z4Nyd6tANEmNqnorOuYfPItSkLrUFzTWjRO-YJrAUZOcpo5kWM7-0-NvGfNrSRpVmltdEsiU8eG0edKl0RcRAnTdkbWqKrwZlgiazaViKO8Hqv5ncjUdvU7U02BgqIBQ9tdozlmdpKEXGIQyRmBg"/>
+</div>
+<div class="p-6">
+<div class="inline-block bg-primary/10 text-primary font-label-sm text-label-sm px-2 py-1 rounded mb-4 uppercase tracking-wide">FinTech</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">ScanPay Africa</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Secure, seamless digital payment gateways facilitating commerce and financial inclusion across the continent.</p>
+<a class="text-primary font-label-md text-label-md hover:underline flex items-center gap-1" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Leadership Placeholder -->
+<section class="py-section-padding bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex justify-between items-end mb-stack-lg border-b border-outline-variant pb-4">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">Leadership</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">The minds guiding our technological vision.</p>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<!-- Placeholder Profiles -->
+<div class="text-center">
+<div class="w-32 h-32 mx-auto bg-surface-container-high rounded-full mb-4 border border-outline-variant overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional corporate headshot of a confident executive in a modern, well-lit office setting. The lighting is bright and soft. The style is formal yet approachable, fitting for a top technology division leader." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_I97LKDkGa_EXjqXE9NsWTvAw7-DJEIliGN7WwkQX_zfz5Kwy9iKBcU6PTAO_cbjpNgEH3w8nr3Cq2nlAMk9G2_x2iZV3gw-AVvnIaZs44u3Bpc55BnFNHm7L8fQ0KQvINlag1vyNx45_vMM_GGm_mo92hQAZIk-bz_2eLLkJwJuDEJS0VCsukex2S5I0wreyL-ppszpU5ECYYRAvJQnZ6TUEXdvju6DF6yCE43y-mxSMfeDBotoCwA"/>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface">Director Name</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Managing Director</p>
+</div>
+<div class="text-center">
+<div class="w-32 h-32 mx-auto bg-surface-container-high rounded-full mb-4 border border-outline-variant overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional corporate headshot of a confident technical lead in a modern, well-lit office setting. The lighting is bright and soft. The style is formal yet approachable, fitting for a top technology division leader." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHZ-vegiYx2H01AHymaJveDRj8GfjqebDFVXkgzPyfStoGey1lTNisW0_9-uvEmpXKTj4U-4-C21gdWWdYA29gtDGMIUWny0WJ7c8HYEWB2WHCdXzBQaNV61DxOLE_Q7D7nTe9fZTPKygQLQAbfu1tguD8QGehj5tX_SQcGp8H_3G0qrYCWvS_dAeZ-0jSiTHLhSgF-QyiJ88MWZGpDx0Gfpr_OMDgFOb4uhAGLLkZnq-08oKkj8VqAg"/>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface">Director Name</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Chief Technology Officer</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Placeholder -->
+<section class="py-section-padding bg-surface">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-lg">Innovation Hub Gallery</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="aspect-square bg-surface-container-high rounded border border-outline-variant relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A bright, minimalist modern office space featuring collaborative work pods and clean lines. Light gray walls with subtle green accents. Professionals are working on laptops in a spacious, airy environment indicating innovation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBspfnGcu5csWV8IpwoqKjtIw1ZmOlH0rAyDxCeTXyV7FZyP7nUJt33zdCfblnCPK10Pfc7AB3g2Xfu3VKfRtofigi_o0Ul4cpGBw4pRgzp38CuTZRgBxC83JEqgz0hpL-7hBPkT-gBGJ95ahcbGfqCC4t1qOrqyStiNSA1SdR7VivMe52J9ucuVf8-41xqCgMkWAI8cX5i0QGDCE8ngiNdknPeN18fFKneIoYMXTLTU2AdZ8BFwde9lQ"/>
+</div>
+<div class="aspect-square bg-surface-container-high rounded border border-outline-variant relative overflow-hidden col-span-2 row-span-2">
+<img class="w-full h-full object-cover" data-alt="A large, impressive boardroom with a sleek glass table and modern presentation screens displaying data analytics. The room is flooded with natural light from floor-to-ceiling windows, creating a premium corporate atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJDpuvnRvItmjAbDp384gPhlbWSWSpl-Q_SEJU1JzWOiTgo5UjFyBlkVVZsRuO1P2v_ujfzPW5wfiREBjnhF1wsh8cHGhMM6tbC4S0mqc8a3_ZXuvJyWcnM1R6LlveP2Y0NAjFtmmz0FNh7DLuSTEki6kmHnAeqI2HPJEbIwMTO3OZMuoHVfMtWDXpf70_MGqfKdtdSU3E93A3UQGC9MOz4nJaoOmA77_IFCm_aYFS2gOE5U0_eGIhoQ"/>
+</div>
+<div class="aspect-square bg-surface-container-high rounded border border-outline-variant relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A close-up shot of hands typing on a modern mechanical keyboard with code visible on a blurred monitor in the background. High-key lighting, clean white desk surface, emphasizing precision and software development." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLHTbMNDdfW2Chpo9XbgofLUB4XIRnGU9LMmrcd5vcjvAxxc9tAeAfACEOjQYrvdsfoFgZqjznnjR9xxb7co4_vbtjNFQhGI1O9iPMjbzVg6zkxKaV1FyuzldTA-u0Gwt2HWQ6ddAfAq3OFsfT3dtSWcSgwNLJZAggzWrWXPNA-fpzD62obh8o9fGh_Kkgqxx-s-a4_0dXPPXCRUP6CdU3W4e2NcVFPmeXUcw5QNUtzWxPIAm2pHoWQA"/>
+</div>
+<div class="aspect-square bg-surface-container-high rounded border border-outline-variant relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="An exterior view of a modern corporate technology campus building with glass facades reflecting a clear sky. Clean architectural lines convey scale, stability, and a premium institutional presence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMQR6smNDHNWxZpX2-AeG2APGOmBNPfTPcXqfL87D0lAV29jxZfui1VfNeVhWV4oZYAoIIJJJcokWeqR-KH1nKS8mnEhaYznprGg41-wCuXjbT6Kjbdx8xHpPbOWZziCvAVBiJbS3cTWFj1ScgHyV_kMXMceRDM3dUQXzXpolpq0yrOaN3R3y4mW9H9xIMHsDY6uhFPmeEAX_7W_DV1HgcFhiFpWG8E6eNR0nu_3LPbUqHWgoh7YxScQ"/>
+</div>
+<div class="aspect-square bg-surface-container-high rounded border border-outline-variant relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A team of diverse professionals in a minimalist white meeting room reviewing architectural diagrams on a glass whiteboard. The mood is collaborative, focused, and highly professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmqFWupby14WXHGR6vP72AI7hSlXBn_jDZAM0QoCo2qsFq2UrNXeHioh_-v-BeCQZHpDOjLV_03N245bsVu2n2B3jb8uJ-iaMEPvHY0KrV1pHBikgvEI2Dp4AMRde4G1qlJGS3fRUltb-YlvqmLm8FpAvxplRg_HoquZoxjFsxyR1_J2DZPJaEl7e--sANGYHYizGVwwsgORu6xec939q1loyCrSrEKw1BlpAozpL42w_SDHaQoB7N2Q"/>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-tertiary-container border-t border-outline-variant dark:border-outline w-full rounded-none">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-padding max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-4 mb-stack-lg">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Duara Group</div>
+</div>
+<div class="flex flex-col space-y-stack-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container uppercase tracking-wider mb-2">Divisions</span>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all focus:ring-2 focus:ring-primary dark:focus:ring-primary-fixed focus:ring-offset-2" href="#">Agency</a>
+<a class="font-body-md text-body-md text-primary dark:text-primary-fixed underline transition-all focus:ring-2 focus:ring-primary dark:focus:ring-primary-fixed focus:ring-offset-2" href="#">Tech</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all focus:ring-2 focus:ring-primary dark:focus:ring-primary-fixed focus:ring-offset-2" href="#">Audiovisual</a>
+</div>
+<div class="flex flex-col space-y-stack-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container uppercase tracking-wider mb-2">Company</span>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all focus:ring-2 focus:ring-primary dark:focus:ring-primary-fixed focus:ring-offset-2" href="about.html">About</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all focus:ring-2 focus:ring-primary dark:focus:ring-primary-fixed focus:ring-offset-2" href="careers.html">Careers</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all focus:ring-2 focus:ring-primary dark:focus:ring-primary-fixed focus:ring-offset-2" href="presence.html">East Africa</a>
+</div>
+<div class="flex flex-col space-y-stack-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container uppercase tracking-wider mb-2">Resources</span>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all focus:ring-2 focus:ring-primary dark:focus:ring-primary-fixed focus:ring-offset-2" href="news.html">News</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all focus:ring-2 focus:ring-primary dark:focus:ring-primary-fixed focus:ring-offset-2" href="csr.html">CSR</a>
+</div>
+<div class="flex flex-col space-y-stack-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container uppercase tracking-wider mb-2">Support</span>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all focus:ring-2 focus:ring-primary dark:focus:ring-primary-fixed focus:ring-offset-2" href="#">Contact</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all focus:ring-2 focus:ring-primary dark:focus:ring-primary-fixed focus:ring-offset-2" href="#">Legal</a>
+</div>
+<div class="col-span-1 md:col-span-4 mt-stack-lg pt-stack-md border-t border-outline-variant/30 text-center md:text-left font-label-sm text-label-sm text-on-surface-variant">
+                © 2024 Duara Group. All Rights Reserved.
+            </div>
+</div>
+</footer>
+</body></html>

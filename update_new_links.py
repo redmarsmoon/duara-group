@@ -8,10 +8,11 @@ LINK_MAP = {
     'East Africa': 'presence.html',
     'CSR': 'csr.html',
     'News': 'news.html',
+    'Careers': 'careers.html'
 }
 
 def update_links():
-    html_files = ['index.html', 'about.html', 'agency.html', 'companies.html', 'holding.html']
+    html_files = glob.glob('*.html')
     for file_path in html_files:
         try:
             with open(file_path, 'r', encoding='utf-8') as f:
@@ -33,8 +34,8 @@ def update_links():
             with open(file_path, 'w', encoding='utf-8') as f:
                 f.write(str(soup))
             print(f"Updated {file_path}")
-        except FileNotFoundError:
-            print(f"Skipping {file_path}, not found.")
+        except Exception as e:
+            print(f"Skipping {file_path}, error: {e}")
 
 if __name__ == '__main__':
     update_links()

@@ -3,421 +3,282 @@
 <html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Careers | Duara Group</title>
+<title>Careers - Duara Group</title>
 <!-- Material Symbols -->
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<!-- Tailwind CSS -->
+<!-- Tailwind CSS Setup -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#37684f",
+                        "error": "#ba1a1a",
+                        "on-surface-variant": "#414943",
+                        "on-secondary-fixed-variant": "#324f00",
+                        "background": "#f9faf6",
+                        "outline": "#717973",
+                        "on-primary-fixed-variant": "#1e5038",
+                        "secondary-fixed-dim": "#a6d55f",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#f9faf6",
+                        "inverse-surface": "#2e312f",
+                        "surface-container-high": "#e7e9e5",
+                        "surface-container": "#edeeea",
+                        "tertiary-fixed": "#e1e3e4",
+                        "primary-fixed": "#b9efce",
+                        "on-tertiary-container": "#9c9e9f",
+                        "on-primary-container": "#76a88b",
+                        "tertiary-fixed-dim": "#c5c7c8",
+                        "inverse-on-surface": "#f0f1ed",
+                        "surface-container-low": "#f3f4f0",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-background": "#191c1a",
+                        "on-secondary-fixed": "#121f00",
+                        "on-surface": "#191c1a",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#e1e3df",
+                        "secondary-container": "#beef75",
+                        "secondary": "#446900",
+                        "primary": "#002516",
+                        "tertiary-container": "#323536",
+                        "on-tertiary-fixed": "#191c1d",
+                        "on-secondary-container": "#486d00",
+                        "surface-dim": "#d9dad7",
+                        "on-primary-fixed": "#002112",
+                        "on-tertiary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface-container-highest": "#e1e3df",
+                        "surface": "#f9faf6",
+                        "primary-fixed-dim": "#9ed2b3",
+                        "on-tertiary-fixed-variant": "#454748",
+                        "secondary-fixed": "#c1f278",
+                        "primary-container": "#063d27",
+                        "outline-variant": "#c0c9c1",
+                        "tertiary": "#1d2021",
+                        "inverse-primary": "#9ed2b3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "margin-desktop": "64px",
+                        "stack-lg": "32px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "section-padding": "80px",
+                        "stack-sm": "8px",
+                        "stack-md": "16px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Hanken Grotesk"],
+                        "label-md": ["Hanken Grotesk"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "label-sm": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "display-lg": ["Hanken Grotesk"],
+                        "headline-md": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
 <style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+            font-family: 'Hanken Grotesk', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        
-        /* Ambient Elevations */
-        .elevation-1 { box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04); }
-        .elevation-2 { box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08); }
-        
-        /* Smooth scrolling */
-        html { scroll-behavior: smooth; }
-        
-        /* Hide scrollbar for horizontal scrolling elements but allow scroll */
-        .no-scrollbar::-webkit-scrollbar { display: none; }
-        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-        /* Scroll Reveal Animations */
-        .reveal-on-scroll {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.8s cubic-bezier(0.33, 1, 0.68, 1), transform 0.8s cubic-bezier(0.33, 1, 0.68, 1);
-            will-change: opacity, transform;
-        }
-
-        .reveal-on-scroll.is-revealed {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Respect Prefers Reduced Motion */
-        @media (prefers-reduced-motion: reduce) {
-            .reveal-on-scroll {
-                transition: none !important;
-                transform: none !important;
-                opacity: 1 !important;
-            }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid theme('colors.surface-container-high');
         }
     </style>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "error-container": "#ffdad6",
-                    "surface": "#f9f9fc",
-                    "on-primary": "#ffffff",
-                    "secondary": "#466800",
-                    "surface-bright": "#f9f9fc",
-                    "on-surface-variant": "#414843",
-                    "tertiary-fixed": "#e1e3e4",
-                    "error": "#ba1a1a",
-                    "background": "#f9f9fc",
-                    "secondary-fixed-dim": "#a5d654",
-                    "on-secondary-fixed-variant": "#344e00",
-                    "secondary-fixed": "#c0f36d",
-                    "surface-variant": "#e2e2e5",
-                    "tertiary-container": "#2a2d2e",
-                    "surface-container-high": "#e8e8ea",
-                    "surface-container-lowest": "#ffffff",
-                    "tertiary-fixed-dim": "#c5c7c8",
-                    "primary-fixed-dim": "#a6d0b6",
-                    "surface-tint": "#406651",
-                    "surface-container-highest": "#e2e2e5",
-                    "on-tertiary-fixed": "#191c1d",
-                    "surface-dim": "#dadadc",
-                    "inverse-surface": "#2f3133",
-                    "on-primary-fixed": "#002112",
-                    "on-error": "#ffffff",
-                    "surface-container-low": "#f3f3f6",
-                    "on-secondary": "#ffffff",
-                    "surface-container": "#eeeef0",
-                    "on-primary-fixed-variant": "#284e3a",
-                    "on-tertiary-fixed-variant": "#454748",
-                    "primary": "#001d0f",
-                    "on-primary-container": "#749d85",
-                    "on-background": "#1a1c1e",
-                    "primary-fixed": "#c1edd1",
-                    "on-tertiary-container": "#929495",
-                    "primary-container": "#0a3321",
-                    "inverse-primary": "#a6d0b6",
-                    "tertiary": "#161819",
-                    "inverse-on-surface": "#f0f0f3",
-                    "on-tertiary": "#ffffff",
-                    "on-error-container": "#93000a",
-                    "outline-variant": "#c1c8c1",
-                    "on-surface": "#1a1c1e",
-                    "on-secondary-container": "#4b6f00",
-                    "secondary-container": "#c0f36d",
-                    "on-secondary-fixed": "#121f00",
-                    "outline": "#717973"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "spacing": {
-                    "stack-md": "24px",
-                    "section-padding": "120px",
-                    "gutter": "32px",
-                    "container-max": "1280px",
-                    "stack-sm": "8px",
-                    "margin-mobile": "20px",
-                    "stack-lg": "80px",
-                    "margin-desktop": "64px"
-            },
-            "fontFamily": {
-                    "headline-lg-mobile": ["Montserrat"],
-                    "headline-md": ["Montserrat"],
-                    "caption": ["Inter"],
-                    "label-bold": ["Inter"],
-                    "headline-lg": ["Montserrat"],
-                    "body-lg": ["Inter"],
-                    "body-md": ["Inter"],
-                    "headline-xl": ["Montserrat"]
-            },
-            "fontSize": {
-                    "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
-                    "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
-                    "caption": ["12px", { "lineHeight": "1.4", "fontWeight": "500" }],
-                    "label-bold": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
-                    "headline-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
-                    "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                    "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                    "headline-xl": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }]
-            }
-          }
-        }
-      }
-    </script>
-<meta content="Join Duara Group and help us build Africa through technology and innovation. Explore careers, internships, and employee benefits." name="description"/></head>
-<body class="bg-background text-on-background font-body-md antialiased selection:bg-secondary selection:text-on-secondary">
+</head>
+<body class="flex flex-col min-h-screen">
 <!-- TopNavBar Component -->
-<header class="bg-surface/85 dark:bg-primary/85 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-outline-variant/30 shadow-sm transition-all duration-300 ease-in-out" id="top-nav">
-<div class="flex justify-between items-center px-margin-desktop max-w-container-max mx-auto h-20">
-<!-- Brand Logo -->
-<a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed" href="#">
+<nav class="bg-surface dark:bg-inverse-surface border-b border-outline-variant dark:border-outline fixed top-0 w-full z-50">
+<div class="flex justify-between items-center h-20 px-margin-desktop max-w-container-max mx-auto">
+<div class="font-display-lg text-display-lg font-bold text-primary dark:text-primary-fixed">
                 Duara Group
-            </a>
-<!-- Navigation Links (Desktop) -->
-<nav class="hidden md:flex space-x-gutter">
-<a class="text-on-surface-variant dark:text-on-surface hover:text-secondary transition-colors hover:text-secondary-container transition-all duration-300 font-body-md text-body-md lg:font-label-bold lg:text-label-bold" href="index.html">Home</a>
-<a class="text-on-surface-variant dark:text-on-surface hover:text-secondary transition-colors hover:text-secondary-container transition-all duration-300 font-body-md text-body-md lg:font-label-bold lg:text-label-bold" href="about.html">About</a>
-<a class="text-on-surface-variant dark:text-on-surface hover:text-secondary transition-colors hover:text-secondary-container transition-all duration-300 font-body-md text-body-md lg:font-label-bold lg:text-label-bold" href="companies.html">Companies</a>
-<a class="text-on-surface-variant dark:text-on-surface hover:text-secondary transition-colors hover:text-secondary-container transition-all duration-300 font-body-md text-body-md lg:font-label-bold lg:text-label-bold" href="presence.html">East Africa</a>
-<a class="text-on-surface-variant dark:text-on-surface hover:text-secondary transition-colors hover:text-secondary-container transition-all duration-300 font-body-md text-body-md lg:font-label-bold lg:text-label-bold" href="csr.html">CSR</a>
-<a class="text-on-surface-variant dark:text-on-surface hover:text-secondary transition-colors hover:text-secondary-container transition-all duration-300 font-body-md text-body-md lg:font-label-bold lg:text-label-bold" href="news.html">News</a>
-<a class="text-secondary font-bold border-b-2 border-secondary pb-1 font-body-md text-body-md lg:font-label-bold lg:text-label-bold" href="careers.html">Careers</a>
-<a class="text-on-surface-variant dark:text-on-surface hover:text-secondary transition-colors hover:text-secondary-container transition-all duration-300 font-body-md text-body-md lg:font-label-bold lg:text-label-bold" href="contact.html">Contact</a>
-</nav>
-<!-- Trailing Action -->
+            </div>
+<div class="hidden md:flex items-center space-x-gutter">
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md px-3 py-2 rounded-DEFAULT hover:bg-surface-container-low dark:hover:bg-tertiary-container transition-all" href="index.html">Home</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md px-3 py-2 rounded-DEFAULT hover:bg-surface-container-low dark:hover:bg-tertiary-container transition-all" href="about.html">About</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md px-3 py-2 rounded-DEFAULT hover:bg-surface-container-low dark:hover:bg-tertiary-container transition-all" href="companies.html">Our Divisions</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md px-3 py-2 rounded-DEFAULT hover:bg-surface-container-low dark:hover:bg-tertiary-container transition-all" href="presence.html">East Africa</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md px-3 py-2 rounded-DEFAULT hover:bg-surface-container-low dark:hover:bg-tertiary-container transition-all" href="csr.html">CSR</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md px-3 py-2 rounded-DEFAULT hover:bg-surface-container-low dark:hover:bg-tertiary-container transition-all" href="news.html">News</a>
+</div>
 <div class="hidden md:block">
-<a class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-bold text-label-bold hover:bg-primary-container transition-colors duration-300" href="contact.html">
-                    Partner With Us
-                </a>
+<a class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-DEFAULT hover:opacity-90 transition-opacity" href="contact.html">Partner With Us</a>
 </div>
-<!-- Mobile Menu Toggle -->
-<button class="md:hidden text-primary p-2">
-<span class="material-symbols-outlined">menu</span>
-</button>
 </div>
-</header>
-<main class="pt-20"> <!-- Offset for fixed header -->
-<!-- Hero Section -->
-<section class="relative h-[716px] flex items-center justify-center overflow-hidden bg-surface-container">
-<div class="absolute inset-0 z-0">
-<img class="w-full h-full object-cover opacity-40" data-alt="A wide, bright, modern corporate office interior in East Africa. Diverse professionals collaborating around sleek glass tables. Floor-to-ceiling windows letting in natural sunlight. High quality editorial photography style. Corporate, clean, optimistic aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgK7WfX7S8Yh2v3r0afwZfMC-P73Ef-cmBKQuboXp9uQ1uwhtb4PwuTJEtwFtFiti3KdcggCU-5t7C4QEbLJ9QNHC-u4FqZRmSNaIWsDZHRhCb3f_zWsV_q0-C5o6A1_Mem5zTfSF6NGF0nsCIZtY5j4mMUzGW2yrVIEhv8DbYi0tLPzvdCFdTDyQ_YKkU0CeS0cv5iJedlN7b7XeF-dhNXH5wvRLm9HJ4fvVYvb-IhvEt_YaPhORphA"/>
-<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent"></div>
-</div>
-<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full reveal-on-scroll">
-<div class="max-w-2xl">
-<span class="font-label-bold text-label-bold text-secondary uppercase tracking-wider block mb-stack-sm">Careers at Duara</span>
-<h1 class="font-headline-xl text-headline-xl text-primary mb-stack-md leading-tight">Shape the Future of East Africa</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg max-w-xl">
-                        Join a diverse, dynamic team driving sustainable growth and innovation across multiple sectors. We invest in potential.
-                    </p>
-<a class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-label-bold text-label-bold hover:bg-secondary-container hover:text-on-secondary-container transition-colors duration-300 inline-flex items-center gap-2" href="#open-roles">
-                        View Open Roles
-                        <span class="material-symbols-outlined text-[18px]">arrow_downward</span>
-</a>
-</div>
+</nav>
+<!-- Main Content Area -->
+<main class="flex-grow pt-[120px] pb-section-padding">
+<!-- Header Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-padding">
+<div class="max-w-3xl">
+<h1 class="font-display-lg text-display-lg text-on-surface mb-stack-md">Careers at Duara Group</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">We are a holding group committed to operational excellence and sustainable growth across diverse sectors. We seek professionals who align with our institutional values and demonstrate rigorous analytical capabilities.</p>
 </div>
 </section>
-<!-- Why Work With Us (Bento Grid) -->
-<section class="py-section-padding px-margin-mobile md:px-margin-desktop bg-background">
-<div class="max-w-container-max mx-auto">
-<div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-stack-sm">Why Duara?</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant">We build environments where exceptional talent can thrive, lead, and make a tangible impact on the region's economy.</p>
+<!-- Core Values Bento Grid -->
+<section class="bg-surface-container-lowest py-section-padding border-y border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-lg">Core Values</h2>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8 bg-surface border border-outline-variant rounded-lg p-stack-lg flex flex-col justify-between">
+<div class="mb-stack-lg">
+<span aria-hidden="true" class="material-symbols-outlined text-primary text-4xl mb-stack-sm">balance</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Integrity</h3>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-<!-- Impact Card -->
-<div class="md:col-span-2 bg-surface-container-lowest rounded-xl p-8 elevation-1 hover:elevation-2 transition-shadow duration-300 reveal-on-scroll" style="transition-delay: 100ms;">
-<span class="material-symbols-outlined text-secondary text-4xl mb-4">public</span>
-<h3 class="font-headline-md text-headline-md text-primary mb-3">Regional Impact</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6">Work on projects that shape infrastructure, technology, and commerce across East Africa. Your work directly contributes to regional development.</p>
-<div class="h-48 rounded-lg overflow-hidden relative">
-<img class="w-full h-full object-cover" data-alt="A modern architectural rendering of a sustainable commercial hub in Nairobi. Bright, sunlit, featuring extensive greenery integrated into the building design. High-end architectural photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6JTByos7yCwqt9R6mr8Y510IEvnUl3twXnV54wTai9UWsZPb_CK6Ba_mYskDVEAlA_nvFU8g54MFY7jAz_lmg0FDLmxgfN39twbWkxiGwmVgS81TyivI9odKZRUACbUrqK_e0dydzHWqFBat3HZPdBaE6WjmNvDW-zpvOHrgXHDvZrJ2ZUOOIKhyFsmmjU3yQI2f0TTzQtjQa5iU2PK5o7Q91z4G3hA0KSglQrzKp9yA7Dnk6xwyKwA"/>
+<p class="font-body-md text-body-md text-on-surface-variant">We demand uncompromised ethical standards in all corporate dealings, financial reporting, and operational execution.</p>
 </div>
+<div class="md:col-span-4 bg-surface border border-outline-variant rounded-lg p-stack-lg">
+<span aria-hidden="true" class="material-symbols-outlined text-primary text-4xl mb-stack-sm">lightbulb</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-stack-sm">Innovation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Continuous improvement of processes and technological integration across subsidiaries.</p>
 </div>
-<!-- Growth Card -->
-<div class="bg-surface-container-lowest rounded-xl p-8 elevation-1 hover:elevation-2 transition-shadow duration-300 reveal-on-scroll" style="transition-delay: 200ms;">
-<span class="material-symbols-outlined text-secondary text-4xl mb-4">trending_up</span>
-<h3 class="font-headline-md text-headline-md text-primary mb-3">Accelerated Growth</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">With interests spanning agriculture to tech, the opportunities for cross-sector mobility and leadership development are unparalleled.</p>
+<div class="md:col-span-4 bg-surface border border-outline-variant rounded-lg p-stack-lg">
+<span aria-hidden="true" class="material-symbols-outlined text-primary text-4xl mb-stack-sm">group</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-stack-sm">Collaboration</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Synergistic operational strategies requiring cross-functional and cross-divisional alignment.</p>
 </div>
-<!-- Culture Card -->
-<div class="bg-primary text-on-primary rounded-xl p-8 elevation-1 hover:elevation-2 transition-shadow duration-300 reveal-on-scroll" style="transition-delay: 300ms;">
-<span class="material-symbols-outlined text-secondary-fixed text-4xl mb-4">groups</span>
-<h3 class="font-headline-md text-headline-md text-on-primary mb-3">Inclusive Culture</h3>
-<p class="font-body-md text-body-md text-on-primary/80">We believe in a meritocracy that values diverse perspectives. Collaboration is our default state.</p>
+<div class="md:col-span-4 bg-surface border border-outline-variant rounded-lg p-stack-lg">
+<span aria-hidden="true" class="material-symbols-outlined text-primary text-4xl mb-stack-sm">verified</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-stack-sm">Excellence</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">A commitment to benchmark-setting performance metrics and quality assurance.</p>
 </div>
-<!-- Benefits Card -->
-<div class="md:col-span-2 bg-surface-container-lowest rounded-xl p-8 elevation-1 hover:elevation-2 transition-shadow duration-300 flex flex-col md:flex-row gap-8 items-center reveal-on-scroll" style="transition-delay: 400ms;">
-<div class="flex-1">
-<span class="material-symbols-outlined text-secondary text-4xl mb-4">health_and_safety</span>
-<h3 class="font-headline-md text-headline-md text-primary mb-3">Comprehensive Wellness</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-4">Beyond competitive compensation, we offer top-tier health coverage, continuous learning stipends, and flexible working arrangements to support your life outside the office.</p>
-</div>
-<div class="w-full md:w-1/3 h-full min-h-[150px] rounded-lg overflow-hidden bg-surface relative">
-<!-- Abstract pattern instead of image -->
-<div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#466800 2px, transparent 2px); background-size: 20px 20px;"></div>
-</div>
+<div class="md:col-span-4 bg-surface border border-outline-variant rounded-lg p-stack-lg">
+<span aria-hidden="true" class="material-symbols-outlined text-primary text-4xl mb-stack-sm">eco</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-stack-sm">Sustainability</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Long-term strategic planning emphasizing environmental compliance and corporate governance.</p>
 </div>
 </div>
 </div>
 </section>
-<!-- Current Openings -->
-<section class="py-section-padding px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="open-roles">
-<div class="max-w-container-max mx-auto">
-<div class="flex flex-col md:flex-row justify-between items-end mb-12 reveal-on-scroll">
-<div class="max-w-2xl">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-stack-sm">Current Openings</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant">Explore roles across our subsidiaries and corporate center.</p>
-</div>
-<!-- Search/Filter -->
-<div class="mt-6 md:mt-0 w-full md:w-auto flex gap-4">
-<div class="relative w-full md:w-64">
-<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
-<input class="w-full pl-10 pr-4 py-2 bg-surface-container-lowest border border-outline-variant rounded-lg focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary/50 font-body-md text-body-md text-on-surface transition-all" placeholder="Search roles..." type="text"/>
-</div>
-<button class="bg-surface-container-highest px-4 py-2 rounded-lg font-label-bold text-label-bold text-on-surface hover:bg-surface-dim transition-colors flex items-center gap-2 border border-outline-variant">
-<span class="material-symbols-outlined text-[18px]">filter_list</span>
-                            Filter
-                        </button>
-</div>
-</div>
-<!-- Job List -->
-<div class="space-y-4">
-<!-- Job Item -->
-<a class="group block bg-surface-container-lowest rounded-xl p-6 elevation-1 hover:elevation-2 hover:border-secondary/30 border border-transparent transition-all duration-300 reveal-on-scroll" href="#" style="transition-delay: 100ms;">
-<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<!-- Open Roles Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-section-padding">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-lg">Open Roles</h2>
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden">
+<!-- Role Item -->
+<div class="border-b border-surface-variant p-stack-md hover:bg-surface-container-low transition-colors flex flex-col sm:flex-row justify-between items-start sm:items-center">
 <div>
-<h3 class="font-headline-md text-[24px] text-primary group-hover:text-secondary transition-colors">Senior Investment Analyst</h3>
-<div class="flex flex-wrap gap-3 mt-2 font-body-md text-body-md text-on-surface-variant">
-<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">domain</span> Duara Capital</span>
-<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">location_on</span> Nairobi, Kenya</span>
-<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">work</span> Full-time</span>
+<h4 class="font-label-md text-label-md font-bold text-on-surface">Senior Financial Analyst</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Nairobi, Kenya \u2022 Duara Corporate HQ</p>
+</div>
+<div class="mt-stack-sm sm:mt-0">
+<span class="inline-block bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-2 py-1 rounded">Full-time</span>
+<button class="ml-stack-md text-primary font-label-md text-label-md hover:underline">View Details</button>
 </div>
 </div>
-<div class="flex items-center gap-2 text-secondary font-label-bold text-label-bold opacity-0 group-hover:opacity-100 transition-opacity -translate-x-4 group-hover:translate-x-0 duration-300">
-                                View Details <span class="material-symbols-outlined">arrow_forward</span>
-</div>
-</div>
-</a>
-<!-- Job Item -->
-<a class="group block bg-surface-container-lowest rounded-xl p-6 elevation-1 hover:elevation-2 hover:border-secondary/30 border border-transparent transition-all duration-300 reveal-on-scroll" href="#" style="transition-delay: 200ms;">
-<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<!-- Role Item -->
+<div class="border-b border-surface-variant p-stack-md hover:bg-surface-container-low transition-colors flex flex-col sm:flex-row justify-between items-start sm:items-center">
 <div>
-<h3 class="font-headline-md text-[24px] text-primary group-hover:text-secondary transition-colors">Supply Chain Manager</h3>
-<div class="flex flex-wrap gap-3 mt-2 font-body-md text-body-md text-on-surface-variant">
-<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">domain</span> AgriLink Logistics</span>
-<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">location_on</span> Dar es Salaam, Tanzania</span>
-<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">work</span> Full-time</span>
+<h4 class="font-label-md text-label-md font-bold text-on-surface">Director of Operations</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Dar es Salaam, Tanzania \u2022 Logistics Division</p>
+</div>
+<div class="mt-stack-sm sm:mt-0">
+<span class="inline-block bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-2 py-1 rounded">Full-time</span>
+<button class="ml-stack-md text-primary font-label-md text-label-md hover:underline">View Details</button>
 </div>
 </div>
-<div class="flex items-center gap-2 text-secondary font-label-bold text-label-bold opacity-0 group-hover:opacity-100 transition-opacity -translate-x-4 group-hover:translate-x-0 duration-300">
-                                View Details <span class="material-symbols-outlined">arrow_forward</span>
-</div>
-</div>
-</a>
-<!-- Job Item -->
-<a class="group block bg-surface-container-lowest rounded-xl p-6 elevation-1 hover:elevation-2 hover:border-secondary/30 border border-transparent transition-all duration-300 reveal-on-scroll" href="#" style="transition-delay: 300ms;">
-<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<!-- Role Item -->
+<div class="border-b border-surface-variant p-stack-md hover:bg-surface-container-low transition-colors flex flex-col sm:flex-row justify-between items-start sm:items-center">
 <div>
-<h3 class="font-headline-md text-[24px] text-primary group-hover:text-secondary transition-colors">Head of Sustainable Agriculture</h3>
-<div class="flex flex-wrap gap-3 mt-2 font-body-md text-body-md text-on-surface-variant">
-<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">domain</span> Duara Agri</span>
-<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">location_on</span> Kigali, Rwanda</span>
-<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">work</span> Full-time</span>
+<h4 class="font-label-md text-label-md font-bold text-on-surface">Compliance Officer</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Kigali, Rwanda \u2022 Tech Division</p>
+</div>
+<div class="mt-stack-sm sm:mt-0">
+<span class="inline-block bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-2 py-1 rounded">Full-time</span>
+<button class="ml-stack-md text-primary font-label-md text-label-md hover:underline">View Details</button>
 </div>
 </div>
-<div class="flex items-center gap-2 text-secondary font-label-bold text-label-bold opacity-0 group-hover:opacity-100 transition-opacity -translate-x-4 group-hover:translate-x-0 duration-300">
-                                View Details <span class="material-symbols-outlined">arrow_forward</span>
+<!-- Role Item -->
+<div class="p-stack-md hover:bg-surface-container-low transition-colors flex flex-col sm:flex-row justify-between items-start sm:items-center">
+<div>
+<h4 class="font-label-md text-label-md font-bold text-on-surface">Corporate Counsel</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Nairobi, Kenya \u2022 Legal Dept</p>
 </div>
-</div>
-</a>
-</div>
-<div class="mt-8 text-center reveal-on-scroll" style="transition-delay: 400ms;">
-<button class="px-6 py-3 rounded-lg border border-secondary text-secondary font-label-bold text-label-bold hover:bg-secondary/5 transition-colors duration-300">
-                        Load More Roles
-                    </button>
-</div>
-</div>
-</section>
-<!-- Early Career Programs -->
-<section class="py-section-padding px-margin-mobile md:px-margin-desktop bg-surface-container">
-<div class="max-w-container-max mx-auto">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
-<div class="order-2 md:order-1 reveal-on-scroll" style="transition-delay: 100ms;">
-<div class="rounded-2xl overflow-hidden elevation-2 relative h-[500px]">
-<img class="w-full h-full object-cover" data-alt="A diverse group of young East African professionals in a modern boardroom, looking engaged during a presentation. Soft, natural lighting. High-quality corporate lifestyle photography emphasizing mentorship and growth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFUrm1hcX4iJ6qEE3UNpsaa8FQ0muP1Ta_fzPlj92t40MiHuY583FL_m7vCAVR9yc1YsKv26alajEchmr31XSvbYHpWKD-EPRW4Waf_tPWIVjm4Qyh8YRJNoTJtbz2J_KuUAwTC3de2LxKhSRrbWsJkgM6pt3jaUslQ2gBqOKXlsGX5KW5biMFe80H9SVyp6huBDBOcYtozHzNo4g42yWdCOrnH6pAIrX9jdE9jOwOdA9F6lJxOEM6pw"/>
-<!-- Overlay -->
-<div class="absolute inset-0 bg-primary/20"></div>
-</div>
-</div>
-<div class="order-1 md:order-2 reveal-on-scroll" style="transition-delay: 200ms;">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-stack-sm">Early Careers</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-md">We are committed to nurturing the next generation of East African leaders through structured programs designed to accelerate learning and responsibility.</p>
-<div class="space-y-8">
-<div class="border-l-2 border-secondary pl-6">
-<h3 class="font-headline-md text-[24px] text-primary mb-2">Graduate Leadership Program</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-3">An intensive 24-month rotational program across our core subsidiaries. Designed for top-tier graduates aiming for management roles.</p>
-<a class="font-label-bold text-label-bold text-secondary hover:text-primary transition-colors flex items-center gap-1" href="#">Learn More <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
-</div>
-<div class="border-l-2 border-outline-variant pl-6 hover:border-secondary transition-colors duration-300">
-<h3 class="font-headline-md text-[24px] text-primary mb-2">Summer Internships</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-3">12-week immersive experiences for university students. Work on real projects with direct mentorship from senior leaders.</p>
-<a class="font-label-bold text-label-bold text-secondary hover:text-primary transition-colors flex items-center gap-1" href="#">View Timeline <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
-</div>
-</div>
+<div class="mt-stack-sm sm:mt-0">
+<span class="inline-block bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-2 py-1 rounded">Contract</span>
+<button class="ml-stack-md text-primary font-label-md text-label-md hover:underline">View Details</button>
 </div>
 </div>
 </div>
 </section>
 </main>
 <!-- Footer Component -->
-<footer class="bg-primary dark:bg-tertiary-container w-full py-stack-lg border-t border-outline-variant/10 text-on-primary font-body-md text-body-md">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
-<!-- Brand Column -->
-<div class="col-span-1 md:col-span-1 flex flex-col items-start gap-4">
-<span class="font-headline-md text-headline-md text-on-primary">Duara Group</span>
-<p class="text-on-primary/80 dark:text-on-tertiary-container/80 text-sm mt-4">
-                    Building a sustainable and prosperous East Africa through strategic investments and operational excellence.
-                </p>
+<footer class="bg-surface-container-highest dark:bg-tertiary-container w-full rounded-none border-t border-outline-variant dark:border-outline">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-padding max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-4 mb-stack-lg flex justify-between items-center">
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Duara Group</span>
+<span class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container">© 2024 Duara Group. All Rights Reserved.</span>
 </div>
-<!-- Links Columns -->
-<div class="col-span-1 md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-8">
-<div class="flex flex-col gap-3">
-<a class="text-on-primary/80 dark:text-on-tertiary-container/80 hover:text-white hover:translate-x-1 transition-transform duration-200" href="#">Company Overview</a>
-<a class="text-on-primary/80 dark:text-on-tertiary-container/80 hover:text-white hover:translate-x-1 transition-transform duration-200" href="#">Subsidiary Links</a>
+<div class="col-span-1">
+<h5 class="font-label-sm text-label-sm text-on-surface mb-stack-sm uppercase tracking-wider">Divisions</h5>
+<ul class="space-y-stack-sm">
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all" href="#">Agency</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all" href="#">Tech</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all" href="#">Audiovisual</a></li>
+</ul>
 </div>
-<div class="flex flex-col gap-3">
-<a class="text-on-primary/80 dark:text-on-tertiary-container/80 hover:text-white hover:translate-x-1 transition-transform duration-200" href="#">Regional Presence</a>
-<a class="text-secondary-fixed font-bold hover:translate-x-1 transition-transform duration-200" href="careers.html">Careers</a>
+<div class="col-span-1">
+<h5 class="font-label-sm text-label-sm text-on-surface mb-stack-sm uppercase tracking-wider">Region</h5>
+<ul class="space-y-stack-sm">
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all" href="presence.html">East Africa</a></li>
+</ul>
 </div>
-<div class="flex flex-col gap-3">
-<a class="text-on-primary/80 dark:text-on-tertiary-container/80 hover:text-white hover:translate-x-1 transition-transform duration-200" href="csr.html">CSR</a>
-<a class="text-on-primary/80 dark:text-on-tertiary-container/80 hover:text-white hover:translate-x-1 transition-transform duration-200" href="#">Privacy Policy</a>
+<div class="col-span-1">
+<h5 class="font-label-sm text-label-sm text-on-surface mb-stack-sm uppercase tracking-wider">Company</h5>
+<ul class="space-y-stack-sm">
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all" href="about.html">About</a></li>
+<li><a class="font-body-md text-body-md text-primary dark:text-primary-fixed underline hover:underline transition-all" href="careers.html">Careers</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all" href="news.html">News</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all" href="csr.html">CSR</a></li>
+</ul>
 </div>
-</div>
-<!-- Copyright & Bottom Line -->
-<div class="col-span-1 md:col-span-4 mt-stack-md pt-stack-sm border-t border-on-primary/20 flex flex-col md:flex-row justify-between items-center opacity-90 hover:opacity-100 transition-opacity">
-<p class="text-sm">© 2024 Duara Group. All Rights Reserved.</p>
-<div class="flex gap-4 mt-4 md:mt-0 text-on-primary/60">
-<!-- Social placeholders -->
-<span class="material-symbols-outlined text-[20px] hover:text-white cursor-pointer">public</span>
-<span class="material-symbols-outlined text-[20px] hover:text-white cursor-pointer">work</span>
-</div>
+<div class="col-span-1">
+<h5 class="font-label-sm text-label-sm text-on-surface mb-stack-sm uppercase tracking-wider">Information</h5>
+<ul class="space-y-stack-sm">
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all" href="#">Contact</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all" href="#">Legal</a></li>
+</ul>
 </div>
 </div>
 </footer>
-<script>
-        // Simple script for nav background on scroll
-        window.addEventListener('scroll', () => {
-            const nav = document.getElementById('top-nav');
-            if (window.scrollY > 20) {
-                nav.classList.add('shadow-md');
-                nav.classList.remove('shadow-sm');
-            } else {
-                nav.classList.remove('shadow-md');
-                nav.classList.add('shadow-sm');
-            }
-        });
-        
-        // High-performance Intersection Observer for scroll animations
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px 0px -50px 0px',
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-revealed');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.reveal-on-scroll').forEach((el) => {
-            observer.observe(el);
-        });
-    </script>
 </body></html>
