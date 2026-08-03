@@ -56,7 +56,7 @@ pages = [
     {
         'file': 'companies.html',
         'title': 'Our Companies | Duara Group',
-        'desc': 'Explore Duara Group subsidiaries: Duara Tech, Duara Agency, and Duara Audiovisual, offering technology, marketing, and media solutions across East Africa.'
+        'desc': 'Explore Duara Group subsidiaries: Duara Dev, Duara Agency, and Duara Audiovisual, offering technology, marketing, and media solutions across East Africa.'
     },
     {
         'file': 'presence.html',

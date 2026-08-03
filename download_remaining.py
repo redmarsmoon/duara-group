@@ -13,7 +13,7 @@ file_map = {
     "projects/15755269347752467937/screens/c8455a4d0ceb43babfd2029fd46fec70": "careers.html",
     "projects/15755269347752467937/screens/a12abac68d834969bfd7a9ebbb9394fa": "csr.html",
     "projects/15755269347752467937/screens/7aeb922fa75c43dc85dd731a18fd2362": "news.html",
-    "projects/15755269347752467937/screens/388c205594564d63953d4c6d98b08a59": "tech.html",
+    "projects/15755269347752467937/screens/388c205594564d63953d4c6d98b08a59": "dev.html",
     "projects/15755269347752467937/screens/d98405f531c74c90ae3cd77bc2ff5949": "audiovisual.html"
 }
 

@@ -5,7 +5,7 @@ replacements = {
     # index.html & about.html
     "Building Africa Through Technology, Innovation &amp; Enterprise": "Technology, Business, and Audiovisual Solutions in East Africa",
     "Building Africa Through Technology, Innovation & Enterprise": "Technology, Business, and Audiovisual Solutions in East Africa",
-    "Duara Group is a premier East African holding company driving sustainable growth and technological advancement across the continent. We invest in the future of Africa through robust infrastructure, digital solutions, and strategic partnerships.": "Duara Group is a holding company based in Nairobi. We operate Duara Tech, Duara Agency, and Duara Audiovisual to provide services to businesses across 9 countries.",
+    "Duara Group is a premier East African holding company driving sustainable growth and technological advancement across the continent. We invest in the future of Africa through robust infrastructure, digital solutions, and strategic partnerships.": "Duara Group is a holding company based in Nairobi. We operate Duara Dev, Duara Agency, and Duara Audiovisual to provide services to businesses across 9 countries.",
     "Driving innovation and enterprise across East Africa through specialized subsidiaries.": "Our companies provide technology, marketing, and media solutions.",
     
     # about.html

@@ -43,7 +43,7 @@ def update_nav():
                     has_tech = any(a.get_text(strip=True) == 'Technology' for a in a_tags)
                     if not has_tech:
                         # Create Technology link
-                        tech_link = soup.new_tag('a', href='tech.html')
+                        tech_link = soup.new_tag('a', href='dev.html')
                         tech_link.string = 'Technology'
                         # Copy classes from about_link (which is usually inactive)
                         if 'class' in about_link.attrs:

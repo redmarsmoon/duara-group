@@ -80,7 +80,7 @@ ABOUT_EXTRA = """
             </div>
             <div class="flex gap-4">
                 <div class="font-label-bold text-secondary w-24 flex-shrink-0">2018</div>
-                <div class="font-body-md text-on-surface-variant">Launch of Duara Tech to drive digital innovation across our portfolio.</div>
+                <div class="font-body-md text-on-surface-variant">Launch of Duara Dev to drive digital innovation across our portfolio.</div>
             </div>
             <div class="flex gap-4">
                 <div class="font-label-bold text-secondary w-24 flex-shrink-0">2020</div>
