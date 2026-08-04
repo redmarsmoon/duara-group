@@ -245,22 +245,24 @@
 </head>
 <body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
 <!-- TopNavBar from JSON -->
-<nav class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl border-b border-outline-variant/30 shadow-sm transition-all duration-300 ease-in-out glass-header">
-<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto h-20">
-<a class="flex items-center" href="index.html"><img alt="Duara Group Logo" class="h-12 md:h-16 w-auto object-contain" src="assets/logo.png"/></a>
-<div class="hidden md:flex gap-gutter items-center">
-<a class="text-secondary font-bold border-b-2 border-secondary pb-1 font-body-md text-body-md lg:font-label-bold lg:text-label-bold hover:text-secondary-container transition-all duration-300" href="index.html">Home</a>
-<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md lg:font-label-bold lg:text-label-bold hover:text-secondary-container transition-all duration-300" href="about.html">About</a>
-<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md lg:font-label-bold lg:text-label-bold hover:text-secondary-container transition-all duration-300" href="companies.html">Companies</a>
-<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md lg:font-label-bold lg:text-label-bold hover:text-secondary-container transition-all duration-300" href="agency.html">East Africa</a><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md lg:font-label-bold lg:text-label-bold hover:text-secondary-container transition-all duration-300" href="dev.html">Technology</a><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md lg:font-label-bold lg:text-label-bold hover:text-secondary-container transition-all duration-300" href="audiovisual.html">Media</a>
-<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md lg:font-label-bold lg:text-label-bold hover:text-secondary-container transition-all duration-300" href="csr.html">CSR</a>
-<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md lg:font-label-bold lg:text-label-bold hover:text-secondary-container transition-all duration-300" href="news.html">News</a>
-<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md lg:font-label-bold lg:text-label-bold hover:text-secondary-container transition-all duration-300" href="careers.html">Careers</a>
-<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md lg:font-label-bold lg:text-label-bold hover:text-secondary-container transition-all duration-300" href="contact.html">Contact</a>
+<nav class="bg-surface dark:bg-inverse-surface fixed top-0 w-full z-50 border-b border-outline-variant dark:border-outline">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<a class="flex items-center" href="index.html">
+<img alt="Duara Group Logo" class="h-12 md:h-16 w-auto object-contain" src="assets/logo.png"/>
+</a>
+<div class="hidden md:flex items-center gap-6">
+<a aria-current="page" class="nav-link font-label-md text-label-md transition-colors text-primary dark:text-primary-fixed font-bold border-b-2 border-primary dark:border-primary-fixed pb-1" href="index.html">Home</a>
+<a class="nav-link font-label-md text-label-md font-medium text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="about.html">About</a>
+<a class="nav-link font-label-md text-label-md font-medium text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="companies.html">Our Divisions</a>
+<a class="nav-link font-label-md text-label-md font-medium text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="agency.html">East Africa</a>
+<a class="nav-link font-label-md text-label-md font-medium text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="dev.html">Technology</a>
+<a class="nav-link font-label-md text-label-md font-medium text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="audiovisual.html">Media</a>
+<a class="nav-link font-label-md text-label-md font-medium text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="csr.html">CSR</a>
+<a class="nav-link font-label-md text-label-md font-medium text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="news.html">News</a>
 </div>
-<a class="bg-primary text-on-primary px-6 py-3 rounded-lg font-label-bold text-label-bold hover:bg-primary-container transition-colors hidden md:block" href="contact.html">
-                Partner With Us
-            </a>
+<a class="hidden md:flex bg-primary text-on-primary font-label-md text-label-md px-6 py-2 rounded hover:opacity-90 active:scale-[0.98] transition-all duration-200" href="contact.html">
+            Partner With Us
+        </a>
 <button class="md:hidden text-primary">
 <span class="material-symbols-outlined">menu</span>
 </button>
