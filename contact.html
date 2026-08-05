@@ -211,6 +211,53 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://duaragroup.com/#organization",
+  "name": "Duara Group",
+  "url": "https://duaragroup.com/",
+  "department": [
+    {
+      "@type": "Organization",
+      "name": "Duara Agency",
+      "url": "https://duara.agency/",
+      "telephone": "+254717022771",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Norfolk Towers, Commercial Offices, First Floor, Gate 3, Kijabe Street",
+        "addressLocality": "Nairobi",
+        "addressCountry": "KE"
+      }
+    },
+    {
+      "@type": "Organization",
+      "name": "Duara Dev",
+      "url": "https://duara.dev/",
+      "telephone": "+254723658888",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Norfolk Towers, Commercial Offices, First Floor, Gate 3, Kijabe Street",
+        "addressLocality": "Nairobi",
+        "addressCountry": "KE"
+      }
+    },
+    {
+      "@type": "Organization",
+      "name": "Duara Audiovisual",
+      "sameAs": "https://www.facebook.com/DuaraAudioVisual",
+      "telephone": "+254723504358",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Ragati Road, Upper Hill",
+        "addressLocality": "Nairobi",
+        "addressCountry": "KE"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body class="antialiased min-h-screen flex flex-col pt-20">
 <nav class="fixed top-0 w-full z-50 bg-surface dark:bg-inverse-surface border-b border-outline-variant dark:border-outline" id="site-nav">
@@ -303,19 +350,8 @@
 <div class="lg:col-span-5 flex flex-col gap-stack-lg">
 <!-- Info Card -->
 <div class="bg-surface-container-lowest border border-outline-variant p-stack-lg rounded shadow-sm">
-<h2 class="font-headline-md text-headline-md font-semibold text-on-surface mb-stack-md">Headquarters</h2>
+<h2 class="font-headline-md text-headline-md font-semibold text-on-surface mb-stack-md">General Enquiries</h2>
 <div class="space-y-stack-md">
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-primary mt-1">location_on</span>
-<div>
-<p class="font-label-md text-label-md text-on-surface font-semibold mb-1">Nairobi Office</p>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                                    Duara Tower, 15th Floor<br/>
-                                    Westlands, Nairobi<br/>
-                                    Kenya
-                                </p>
-</div>
-</div>
 <div class="flex items-start gap-4">
 <span class="material-symbols-outlined text-primary mt-1">mail</span>
 <div>
@@ -348,6 +384,78 @@
 </div>
 </div>
 </div>
+<!-- Division Contacts -->
+<section class="pt-section-padding">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-stack-lg">Division Contacts</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Duara Agency -->
+<div class="bg-surface-container-lowest border border-outline-variant p-stack-lg rounded shadow-sm flex flex-col gap-stack-md">
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface">Duara Agency</h3>
+<div class="flex items-start gap-4">
+<span aria-hidden="true" class="material-symbols-outlined text-primary mt-1">call</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold mb-1">Phone</p>
+<p class="font-body-md text-body-md text-on-surface-variant"><a class="hover:text-primary hover:underline transition-colors" href="tel:+254717022771">+254 717 022 771</a></p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span aria-hidden="true" class="material-symbols-outlined text-primary mt-1">location_on</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold mb-1">Office</p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                Norfolk Towers, Commercial Offices<br/>
+                                First Floor, Gate 3, Kijabe Street<br/>
+                                Nairobi, Kenya
+                            </p>
+</div>
+</div>
+</div>
+<!-- Duara Dev -->
+<div class="bg-surface-container-lowest border border-outline-variant p-stack-lg rounded shadow-sm flex flex-col gap-stack-md">
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface">Duara Dev</h3>
+<div class="flex items-start gap-4">
+<span aria-hidden="true" class="material-symbols-outlined text-primary mt-1">call</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold mb-1">Phone</p>
+<p class="font-body-md text-body-md text-on-surface-variant"><a class="hover:text-primary hover:underline transition-colors" href="tel:+254723658888">+254 723 658 888</a></p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span aria-hidden="true" class="material-symbols-outlined text-primary mt-1">location_on</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold mb-1">Office</p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                Norfolk Towers, Commercial Offices<br/>
+                                First Floor, Gate 3, Kijabe Street<br/>
+                                Nairobi, Kenya
+                            </p>
+</div>
+</div>
+</div>
+<!-- Duara Audiovisual -->
+<div class="bg-surface-container-lowest border border-outline-variant p-stack-lg rounded shadow-sm flex flex-col gap-stack-md">
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface">Duara Audiovisual</h3>
+<div class="flex items-start gap-4">
+<span aria-hidden="true" class="material-symbols-outlined text-primary mt-1">call</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold mb-1">Phone</p>
+<p class="font-body-md text-body-md text-on-surface-variant"><a class="hover:text-primary hover:underline transition-colors" href="tel:+254723504358">+254 723 504 358</a></p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span aria-hidden="true" class="material-symbols-outlined text-primary mt-1">location_on</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold mb-1">Office</p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                Ragati Road<br/>
+                                Upper Hill<br/>
+                                Nairobi, Kenya
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
 </main>
 <footer class="bg-surface-container-highest dark:bg-tertiary-container w-full rounded-none border-t border-outline-variant dark:border-outline mt-auto" id="site-footer">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-padding max-w-container-max mx-auto">
