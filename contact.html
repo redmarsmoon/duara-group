@@ -345,6 +345,13 @@
 <p class="hidden font-body-md text-body-md" id="contact-status" role="status"></p>
 </div>
 </form>
+<!-- Shown in place of the form once the inquiry is sent -->
+<div class="hidden flex-col items-start gap-stack-md" id="contact-success">
+<span aria-hidden="true" class="material-symbols-outlined text-primary text-5xl">check_circle</span>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface" id="contact-success-heading" tabindex="-1">Thank you, your inquiry has been sent</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">We have received your message and will be in touch shortly. If it is urgent, call the relevant division directly using the numbers below.</p>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded hover:bg-primary-container transition-colors" id="contact-reset" type="button">Send another inquiry</button>
+</div>
 </div>
 <!-- Contact Info & Map (Right - 5 cols) -->
 <div class="lg:col-span-5 flex flex-col gap-stack-lg">
@@ -371,15 +378,12 @@
 </div>
 </div>
 </div>
-<!-- Map Placeholder -->
-<div class="bg-surface-container-lowest border border-outline-variant rounded overflow-hidden shadow-sm h-64 relative group cursor-pointer">
-<!-- Map Image -->
-<div class="absolute inset-0 bg-surface-container-high flex items-center justify-center">
-<img alt="Map showing the Duara Group head office location in Nairobi" class="object-cover w-full h-full opacity-80 group-hover:opacity-100 transition-opacity duration-300" data-alt="A clean, minimalist high-end digital map rendering of Nairobi, Kenya. The map style is corporate and modern, using light grayscale tones with subtle green accents indicating parks or major routes. The aesthetic is clean, flat, and professional, suitable for a corporate holding group's contact page. Sharp lines, clear typography, light mode." data-location="Nairobi, Kenya" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaHuC9dwe5rSOxGhEEWpAvjhHTkSluIIGY-Z371PYY6dX0TvxsA_kmGXwwKOlZMT6hCuN1f3_Z7NoZYZS7vi5P_NLhbPMZGaO-WZjVTiGhtBYajK363zjm_dKUjo-H2mjtr3xy2LYM-BGQtWIvsRmocY80BhsX36PvDb4l6sWeIJml0Q92yTxbV6k32a0FbgW1eSNEgI8J0d4Tl73suNUto1bOFVevcW5Npf3wTivCxdrpfFl6WC767w"/>
-</div>
-<div class="absolute bottom-4 right-4 bg-surface-container-lowest px-4 py-2 border border-outline-variant rounded shadow-sm flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-sm">open_in_new</span>
-<span class="font-label-sm text-label-sm text-on-surface uppercase">View Map</span>
+<!-- Map: Norfolk Towers, shared by Duara Agency and Duara Dev -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded overflow-hidden shadow-sm">
+<iframe allowfullscreen="" class="w-full h-64 border-0 block" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Norfolk+Towers%2C+Kijabe+Street%2C+Nairobi%2C+Kenya&amp;output=embed" title="Map showing Norfolk Towers, Kijabe Street, Nairobi"></iframe>
+<div class="flex items-center justify-between gap-4 px-stack-md py-stack-sm border-t border-outline-variant">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Norfolk Towers &mdash; Duara Agency and Duara Dev</p>
+<a class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-1 shrink-0" href="https://www.google.com/maps/search/?api=1&amp;query=Norfolk+Towers%2C+Kijabe+Street%2C+Nairobi%2C+Kenya" rel="noopener noreferrer" target="_blank">Directions <span aria-hidden="true" class="material-symbols-outlined text-sm">open_in_new</span></a>
 </div>
 </div>
 </div>
@@ -409,6 +413,7 @@
                             </p>
 </div>
 </div>
+<a class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-1 w-fit" href="https://www.google.com/maps/search/?api=1&amp;query=Norfolk+Towers%2C+Kijabe+Street%2C+Nairobi%2C+Kenya" rel="noopener noreferrer" target="_blank">View on map <span aria-hidden="true" class="material-symbols-outlined text-sm">open_in_new</span></a>
 </div>
 <!-- Duara Dev -->
 <div class="bg-surface-container-lowest border border-outline-variant p-stack-lg rounded shadow-sm flex flex-col gap-stack-md">
@@ -431,6 +436,7 @@
                             </p>
 </div>
 </div>
+<a class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-1 w-fit" href="https://www.google.com/maps/search/?api=1&amp;query=Norfolk+Towers%2C+Kijabe+Street%2C+Nairobi%2C+Kenya" rel="noopener noreferrer" target="_blank">View on map <span aria-hidden="true" class="material-symbols-outlined text-sm">open_in_new</span></a>
 </div>
 <!-- Duara Audiovisual -->
 <div class="bg-surface-container-lowest border border-outline-variant p-stack-lg rounded shadow-sm flex flex-col gap-stack-md">
@@ -453,6 +459,7 @@
                             </p>
 </div>
 </div>
+<a class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-1 w-fit" href="https://www.google.com/maps/search/?api=1&amp;query=Ragati+Road%2C+Upper+Hill%2C+Nairobi%2C+Kenya" rel="noopener noreferrer" target="_blank">View on map <span aria-hidden="true" class="material-symbols-outlined text-sm">open_in_new</span></a>
 </div>
 </div>
 </section>
@@ -464,7 +471,7 @@
 <p class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container">© <span id="footer-year">2026</span> Duara Group. All Rights Reserved.</p>
 </div>
 <div class="md:col-span-1">
-<h4 class="font-label-sm text-label-sm text-primary dark:text-primary-fixed uppercase tracking-wider mb-4">Divisions</h4>
+<h3 class="font-label-sm text-label-sm text-primary dark:text-primary-fixed uppercase tracking-wider mb-4">Divisions</h3>
 <ul class="flex flex-col gap-2">
 <li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all focus:ring-2 focus:ring-primary dark:focus:ring-primary-fixed focus:ring-offset-2 rounded" href="agency.html">East Africa</a></li>
 <li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all focus:ring-2 focus:ring-primary dark:focus:ring-primary-fixed focus:ring-offset-2 rounded" href="dev.html">Technology</a></li>
@@ -473,14 +480,14 @@
 </ul>
 </div>
 <div class="md:col-span-1">
-<h4 class="font-label-sm text-label-sm text-primary dark:text-primary-fixed uppercase tracking-wider mb-4">Company</h4>
+<h3 class="font-label-sm text-label-sm text-primary dark:text-primary-fixed uppercase tracking-wider mb-4">Company</h3>
 <ul class="flex flex-col gap-2">
 <li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all focus:ring-2 focus:ring-primary dark:focus:ring-primary-fixed focus:ring-offset-2 rounded" href="about.html">About</a></li>
 <li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all focus:ring-2 focus:ring-primary dark:focus:ring-primary-fixed focus:ring-offset-2 rounded" href="careers.html">Careers</a></li>
 </ul>
 </div>
 <div class="md:col-span-1">
-<h4 class="font-label-sm text-label-sm text-primary dark:text-primary-fixed uppercase tracking-wider mb-4">Connect</h4>
+<h3 class="font-label-sm text-label-sm text-primary dark:text-primary-fixed uppercase tracking-wider mb-4">Connect</h3>
 <ul class="flex flex-col gap-2">
 <li><a aria-current="page" class="font-body-md text-body-md text-primary dark:text-primary-fixed underline transition-all focus:ring-2 focus:ring-primary dark:focus:ring-primary-fixed focus:ring-offset-2 rounded" href="contact.html">Contact</a></li>
 <li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all focus:ring-2 focus:ring-primary dark:focus:ring-primary-fixed focus:ring-offset-2 rounded" href="csr.html">CSR</a></li>
@@ -511,6 +518,8 @@
   var form = document.getElementById('contact-form');
   var button = document.getElementById('contact-submit');
   var status = document.getElementById('contact-status');
+  var success = document.getElementById('contact-success');
+  var reset = document.getElementById('contact-reset');
   if (form && button && status) {
     var show = function (message, ok) {
       status.textContent = message;
@@ -518,6 +527,24 @@
       status.classList.toggle('text-primary', ok);
       status.classList.toggle('text-error', !ok);
     };
+    // Swap the form out for the confirmation panel, and back again.
+    var showSuccess = function (on) {
+      if (!success) { return; }
+      form.classList.toggle('hidden', on);
+      success.classList.toggle('hidden', !on);
+      success.classList.toggle('flex', on);
+      if (on) {
+        var heading = document.getElementById('contact-success-heading');
+        if (heading) { heading.focus(); }
+      }
+    };
+    if (reset) {
+      reset.addEventListener('click', function () {
+        status.classList.add('hidden');
+        showSuccess(false);
+        form.querySelector('input:not([type=hidden]), textarea').focus();
+      });
+    }
     form.addEventListener('submit', function (event) {
       event.preventDefault();
       button.disabled = true;
@@ -535,7 +562,8 @@
       }).then(function (result) {
         if (result.ok) {
           form.reset();
-          show('Thank you. Your inquiry has been sent and we will be in touch.', true);
+          status.classList.add('hidden');
+          showSuccess(true);
         } else {
           show(result.data.message || 'Something went wrong. Please try again.', false);
         }
