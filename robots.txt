@@ -1,13 +1,4 @@
 User-agent: *
-Allow: /
-
-# Development artifacts, not part of the published site
-Disallow: /original_index.html
-Disallow: /index-scroll.html
-Disallow: /sections.html
-Disallow: /perfect_nav.html
-
-# Partial duplicate of the homepage; canonicalised to /
-Disallow: /holding.html
+Disallow:
 
 Sitemap: https://duaragroup.com/sitemap.xml
